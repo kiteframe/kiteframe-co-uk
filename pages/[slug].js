@@ -3,8 +3,8 @@ import markdownToHtml from '../lib/markdown';
 
 export default function Post({meta, content}) {
     return (
-        <div className="container mx-auto">
-            <article className="prose" dangerouslySetInnerHTML={{__html: content}}/>
+        <div className="container mx-auto xl:max-w-3xl">
+            <article className="prose max-w-none" dangerouslySetInnerHTML={{__html: content}}/>
         </div>
     );
 }

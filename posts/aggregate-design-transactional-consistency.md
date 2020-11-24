@@ -33,19 +33,14 @@ namespace Accounting\Domain;
 
 class Client
 {
-		private string $clientId;
+    private string $clientId;
     private string $name;
     private string $email;
     private string $phoneNumber;
     
-    public function __construct(
-				string $clientId,
-				string $name,
-				string $email,
-				string $phoneNumber
-		)
+    public function __construct(string $clientId, string $name, string $email, string $phoneNumber)
     {
-				$this->clientId = $clientId;
+        $this->clientId = $clientId;
         $this->name = $name;
         $this->email = $email;
         $this->phoneNumber = $phoneNumber;
@@ -68,7 +63,7 @@ class Client
 }
 ```
 
-> This guide is about Aggregate design, and deliberately leaves out extraneous details to allow us to focus on the topic at hand. I also don't work in the domain of accounting, so please forgive any incorrect modelling.
+**This guide is about Aggregate design, and deliberately leaves out extraneous details to allow us to focus on the topic at hand. I also don't work in the domain of accounting, so please forgive any incorrect modelling.**
 
 It is a good start! With not much domain code at all, you have supported four use cases:
 
@@ -86,7 +81,7 @@ namespace Accounting\Domain;
 
 class Client
 {
-		private string $clientId;
+    private string $clientId;
     private string $name;
     private string $email;
     private string $phoneNumber;
@@ -94,14 +89,15 @@ class Client
 
     public function __construct(string $clientId, string $name, string $email, string $phoneNumber)
     {
-				$this->clientId = $clientId;
+        $this->clientId = $clientId;
         $this->name = $name;
         $this->email = $email;
         $this->phoneNumber = $phoneNumber;
         $this->invoices = [];
     }
     
-    public function invoice(int $invoiceNumber, float $amount, string $dueDate) {
+    public function invoice(int $invoiceNumber, float $amount, string $dueDate)
+    {
         $this->invoices[$invoiceNumber] = new Invoice($invoiceNumber, $amount, $dueDate);
     }
 
@@ -120,15 +116,15 @@ namespace Accounting\Domain;
 
 class Client
 {
-		...
+    ...
 
     public function invoice(int $invoiceNumber, float $amount, string $dueDate) {
         $this->invoices[$invoiceNumber] = new Invoice($invoiceNumber, $amount, $dueDate);
     }
 
-		public function markInvoiceAsPaid(int $invoiceNumber) {
-				$this->invoices[$invoiceNumber]->markAsPaid();
-		}
+    public function markInvoiceAsPaid(int $invoiceNumber) {
+        $this->invoices[$invoiceNumber]->markAsPaid();
+    }
 
     ...
 }
@@ -147,19 +143,19 @@ namespace Accounting\Application;
 
 class MarkInvoiceAsPaidCommandHandler extends TransactionalUseCase
 {
-		private ClientRepository $clientRepository;
+    private ClientRepository $clientRepository;
 
-		public function __construct(ClientRepository $clientRepository) {
-		    $this->clientRepository = $clientRepository;
+    public function __construct(ClientRepository $clientRepository) {
+        $this->clientRepository = $clientRepository;
     }
 
-		public function handle(string $clientId, int $invoiceNumber) {
-				$client = $this->clientRepository->clientOfId($clientId);
-				
-				$client->markInvoiceAsPaid($invoiceNumber);
+    public function handle(string $clientId, int $invoiceNumber) {
+        $client = $this->clientRepository->clientOfId($clientId);
+        
+        $client->markInvoiceAsPaid($invoiceNumber);
 
-				$this->clientRepository->save($client);
-		}
+        $this->clientRepository->save($client);
+    }
 }
 ```
 
@@ -172,19 +168,19 @@ namespace Accounting\Application;
 
 class MarkInvoiceAsPaidCommandHandler extends TransactionalUseCase
 {
-		private InvoiceRepository $invoiceRepository;
+    private InvoiceRepository $invoiceRepository;
 
-		public function __construct(InvoiceRepository $invoiceRepository) {
-		    $this->invoiceRepository = $invoiceRepository;
+    public function __construct(InvoiceRepository $invoiceRepository) {
+        $this->invoiceRepository = $invoiceRepository;
     }
 
-		public function handle(int $invoiceNumber) {
-				$invoice = $this->invoiceRepository->invoiceOfNumber($invoiceNumber);
-				
-				$invoice->markAsPaid();
+    public function handle(int $invoiceNumber) {
+        $invoice = $this->invoiceRepository->invoiceOfNumber($invoiceNumber);
+        
+        $invoice->markAsPaid();
 
-				$this->invoiceRepository->save($invoice);
-		}
+        $this->invoiceRepository->save($invoice);
+    }
 }
 ```
 
@@ -199,7 +195,7 @@ namespace Accounting\Domain;
 
 class Client
 {
-		...
+    ...
 
     public function invoice(int $invoiceNumber, float $amount, string $dueDate) {
         return new Invoice($this->clientId, $invoiceNumber, $amount, $dueDate);
@@ -216,28 +212,25 @@ namespace Accounting\Application;
 
 class InvoiceClientCommandHandler extends TransactionalUseCase
 {
-		private ClientRepository $clientRepository;
-		private InvoiceRepository $invoiceRepository;
+    private ClientRepository $clientRepository;
+    private InvoiceRepository $invoiceRepository;
 
-		public function __construct(
-				ClientRepository $clientRepository,
-				InvoiceRepository $invoiceRepository
-		) {
-
-				$this->clientRepository = $clientRepository;				
-		    $this->invoiceRepository = $invoiceRepository;
+    public function __construct(ClientRepository $clientRepository, InvoiceRepository $invoiceRepository) {
+        $this->clientRepository = $clientRepository;				
+        $this->invoiceRepository = $invoiceRepository;
     }
 
-		public function handle(float $amount, string $dueDate) {
-				$client = $this->clientRepository->clientOfId($clientId);
-				
-				$invoice = $client->invoice(
-						$this->invoiceRepository->nextInvoiceNumberForClient($clientId),
-						$amount,
-						$dueDate);
+    public function handle(float $amount, string $dueDate) {
+        $client = $this->clientRepository->clientOfId($clientId);
+        
+        $invoice = $client->invoice(
+                $this->invoiceRepository->nextInvoiceNumberForClient($clientId),
+                $amount,
+                $dueDate
+        );
 
-				$this->invoiceRepository->save($invoice);
-		}
+        $this->invoiceRepository->save($invoice);
+    }
 }
 ```
 
@@ -265,39 +258,36 @@ class Client
     private array $invoices;
     private int $outstandingInvoiceLimit;
 
-    public function __construct(
-        string $clientId,
-        string $name,
-        string $email,
-        string $phoneNumber
-    ) {
-				$this->clientId = $clientId;
+    public function __construct(string $clientId, string $name, string $email, string $phoneNumber)
+    {
+        $this->clientId = $clientId;
         $this->name = $name;
         $this->email = $email;
         $this->phoneNumber = $phoneNumber;
         $this->invoices = [];
-				$this->outstandingInvoiceLimit = 10;
+        $this->outstandingInvoiceLimit = 10;
     }
     
-    public function invoice(int $invoiceNumber, float $amount, string $dueDate) {
-				$outstandingInvoiceCount = 0;
-				
-				foreach($this->invoices as $invoice) {
-					  if ($invoice->isUnpaid()) {
-								$outstandingInvoiceCount++;
-						}
-				}
+    public function invoice(int $invoiceNumber, float $amount, string $dueDate)
+    {
+        $outstandingInvoiceCount = 0;
+        
+        foreach($this->invoices as $invoice) {
+            if ($invoice->isUnpaid()) {
+                $outstandingInvoiceCount++;
+            }
+        }
 
-				if ($outstandingInvoiceCount === $this->unpaidInvoiceLimit) {
-						throw new OutstandingInvoiceLimitReachedException();
-				}
+        if ($outstandingInvoiceCount === $this->unpaidInvoiceLimit) {
+            throw new OutstandingInvoiceLimitReachedException();
+        }
 				
         $this->invoices[] = new Invoice($invoiceNumber, $amount, $dueDate);
     }
 
-		public function changeOutstandingInvoiceLimit(int $invoiceLimit) {
-				$this->oustandingInvoiceLimit = $invoiceLimit;
-		}
+    public function changeOutstandingInvoiceLimit(int $invoiceLimit) {
+        $this->oustandingInvoiceLimit = $invoiceLimit;
+    }
 
     ...
 }
@@ -318,29 +308,28 @@ namespace Accounting\Application;
 
 class InvoiceClientCommandHandler extends TransactionalUseCase
 {
-		private ClientRepository $clientRepository;
-		private InvoiceRepository $invoiceRepository;
+    private ClientRepository $clientRepository;
+    private InvoiceRepository $invoiceRepository;
 
-		public function __construct(
-				ClientRepository $clientRepository,
-				InvoiceRepository $invoiceRepository) {
-
-				$this->clientRepository = $clientRepository;				
-		    $this->invoiceRepository = $invoiceRepository;
+    public function __construct(ClientRepository $clientRepository, InvoiceRepository $invoiceRepository)
+    {
+        $this->clientRepository = $clientRepository;				
+        $this->invoiceRepository = $invoiceRepository;
     }
 
-		public function handle(float $amount, string $dueDate) {
-				$client = $this->clientRepository->clientOfId($clientId);
-				$outstandingInvoices = $this->invoiceRepository->outstandingInvoicesForClient($clientId);
-				
-				$invoice = $client->invoice(
-						$this->invoiceRepository->nextInvoiceNumberForClient($clientId),
-						$amount,
-						$dueDate,
-						$outstandingInvoices);
+    public function handle(float $amount, string $dueDate) {
+        $client = $this->clientRepository->clientOfId($clientId);
+        $outstandingInvoices = $this->invoiceRepository->outstandingInvoicesForClient($clientId);
+        
+        $invoice = $client->invoice(
+            $this->invoiceRepository->nextInvoiceNumberForClient($clientId),
+            $amount,
+            $dueDate,
+            $outstandingInvoices
+        );
 
-				$this->invoiceRepository->save($invoice);
-		}	
+        $this->invoiceRepository->save($invoice);
+    }	
 }
 ```
 
@@ -351,17 +340,12 @@ namespace Accounting\Domain;
 
 class Client
 {
-		...
+    ...
     
-    public function invoice(
-				int $invoiceNumber,
-				float $amount,
-				string $dueDate,
-				array $outstandingInvoices) {
-
-				if (count($outstandingInvoices) === $this->outstandingInvoiceLimit) {
-						throw new OutstandingInvoiceLimitReachedException();
-				}
+    public function invoice(int $invoiceNumber, float $amount, string $dueDate, array $outstandingInvoices) {
+        if (count($outstandingInvoices) === $this->outstandingInvoiceLimit) {
+                throw new OutstandingInvoiceLimitReachedException();
+        }
 				
         return new Invoice($this->clientId, $invoiceNumber, $amount, $dueDate);
     }

@@ -4,8 +4,6 @@ description: Drawing well-defined boundaries around clusters of objects within y
 author: Tim Mortimer
 ---
 
-# Aggregate Design Part 1: Transactional Consistency
-
 When getting started with the tactical patterns of Domain-Driven Design, you soon come across the concepts of Entities and Value Objects.
 
 Entities are objects with an identity, and are objects whose state we want to keep track of over time.

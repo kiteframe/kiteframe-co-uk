@@ -24,7 +24,7 @@ export default function Guides({guides}) {
                             <dl>
                                 <dt className="sr-only">Published on</dt>
                                 <dd className="text-base leading-6 font-medium text-gray-500">
-                                    <time dateTime="2020-11-19">November 19, 2020</time>
+                                    <time dateTime={guide.meta.date}>{guide.meta.date}</time>
                                 </dd>
                             </dl>
                             <div className="space-y-5 xl:col-span-3">

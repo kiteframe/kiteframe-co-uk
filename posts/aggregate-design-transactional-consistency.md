@@ -1,4 +1,6 @@
 ---
+title: "Aggregate Design Part 1: Transactional Consistency"
+description: Drawing well-defined boundaries around clusters of objects within your codebase is vital to reducing contention between users and optimising the availability of your system. Understanding the invariants within your domain is key to understanding where these boundaries can be drawn.
 author: Tim Mortimer
 ---
 

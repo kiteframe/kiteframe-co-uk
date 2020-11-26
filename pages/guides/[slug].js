@@ -1,6 +1,6 @@
-import {getAllPosts, getPostBySlug} from '../lib/posts';
-import markdownToHtml from '../lib/markdown';
-import Layout from "../components/layout";
+import {getAllPosts, getPostBySlug} from '../../lib/posts';
+import markdownToHtml from '../../lib/markdown';
+import Layout from "../../components/layout";
 
 export default function Post({meta, content}) {
     return (

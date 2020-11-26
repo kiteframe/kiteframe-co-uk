@@ -1,11 +1,14 @@
 import {getAllPosts, getPostBySlug} from '../lib/posts';
 import markdownToHtml from '../lib/markdown';
+import Layout from "../components/layout";
 
 export default function Post({meta, content}) {
     return (
-        <div className="container mx-auto xl:max-w-3xl">
-            <article className="prose max-w-none" dangerouslySetInnerHTML={{__html: content}}/>
-        </div>
+        <Layout>
+            <div className="container mx-auto px-4">
+                <article className="prose mx-auto" dangerouslySetInnerHTML={{__html: content}}/>
+            </div>
+        </Layout>
     );
 }
 

@@ -1,3 +1,7 @@
+---
+author: Tim Mortimer
+---
+
 # Aggregate Design Part 1: Transactional Consistency
 
 When getting started with the tactical patterns of Domain-Driven Design, you soon come across the concepts of Entities and Value Objects.

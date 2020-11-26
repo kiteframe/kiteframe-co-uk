@@ -1,8 +1,8 @@
-import {getAllPosts, getPostBySlug} from '../../lib/posts';
+import {getAllGuides, getGuideBySlug} from '../../lib/guides';
 import markdownToHtml from '../../lib/markdown';
 import Layout from "../../components/layout";
 
-export default function Post({meta, content}) {
+export default function Guide({meta, content}) {
     return (
         <Layout>
             <article className="container mx-auto px-4">
@@ -31,25 +31,25 @@ export default function Post({meta, content}) {
 }
 
 export async function getStaticProps({params}) {
-    const post = getPostBySlug(params.slug);
-    const content = await markdownToHtml(post.content || '');
+    const guide = getGuideBySlug(params.slug);
+    const content = await markdownToHtml(guide.content || '');
 
     return {
         props: {
-            ...post,
+            ...guide,
             content
         }
     };
 }
 
 export async function getStaticPaths() {
-    const posts = getAllPosts();
+    const guides = getAllGuides();
 
     return {
-        paths: posts.map((post) => {
+        paths: guides.map((guide) => {
             return {
                 params: {
-                    slug: post.slug
+                    slug: guide.slug
                 }
             };
         }),

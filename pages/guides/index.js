@@ -1,9 +1,9 @@
 import Layout from "../../components/layout";
 import Head from "next/head";
-import {getAllPosts} from "../../lib/posts";
+import {getAllGuides} from "../../lib/guides";
 import Link from "next/link";
 
-export default function Guides({posts}) {
+export default function Guides({guides}) {
     return (
         <Layout>
             <Head>
@@ -19,8 +19,8 @@ export default function Guides({posts}) {
                 </div>
 
                 <div className="divide-y divide-gray-200">
-                    { posts.map(post => (
-                        <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline py-12" key={post.slug}>
+                    { guides.map(guide => (
+                        <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline py-12" key={guide.slug}>
                             <dl>
                                 <dt className="sr-only">Published on</dt>
                                 <dd className="text-base leading-6 font-medium text-gray-500">
@@ -30,11 +30,11 @@ export default function Guides({posts}) {
                             <div className="space-y-5 xl:col-span-3">
                                 <div className="space-y-6">
                                     <h2 className="text-2xl leading-8 font-bold tracking-tight">
-                                        <Link href={`/guides/${post.slug}`}>
-                                            <a className="text-gray-900">{post.meta.title}</a>
+                                        <Link href={`/guides/${guide.slug}`}>
+                                            <a className="text-gray-900">{guide.meta.title}</a>
                                         </Link>
                                     </h2>
-                                    <p className="text-gray-500">{post.meta.description}</p>
+                                    <p className="text-gray-500">{guide.meta.description}</p>
                                 </div>
                             </div>
                         </article>
@@ -46,11 +46,11 @@ export default function Guides({posts}) {
 }
 
 export async function getStaticProps() {
-    const posts = getAllPosts();
+    const guides = getAllGuides();
 
     return {
         props: {
-            posts
+            guides
         }
     };
 }

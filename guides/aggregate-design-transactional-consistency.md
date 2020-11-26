@@ -378,4 +378,4 @@ If you have correctly identified your Aggregate boundaries, you should be able t
 
 I hope that has helped you to understand what an Aggregate is, and how you can utilize Aggregates to improve the usability and availability of your systems.
 
-In the next blog post I'll be taking a step away from transactional consistency to talk about *eventual consistency* - a tool that lets us further improve the availability of our systems by taking advantage of business rules that don't need to be immediately up-to-date at all times.
+In the next guide I'll be taking a step away from transactional consistency to talk about *eventual consistency* - a tool that lets us further improve the availability of our systems by taking advantage of business rules that don't need to be immediately up-to-date at all times.

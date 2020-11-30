@@ -3,14 +3,15 @@ import Layout from "../components/layout";
 export default function Home() {
     return (
         <Layout>
-            <div className="flex container mx-auto px-4 pt-28 pb-36">
-                <div className="w-1/3">
+            <div className="container flex flex-wrap items-center mx-auto max-w-5xl px-4 pt-14 pb-16">
+                <div className="w-full md:w-1/2 mb-20">
                     <h1 className="text-5xl font-extrabold text-gray-900 mb-4 leading-tight">Accelerate the development
                         of your PHP-based platform</h1>
                     <span className="text-xl font-normal text-gray-900">We help CTOs build well-architected software that gives them the freedom to confidently adapt their technology strategy to changing business needs.</span>
                 </div>
 
-                <div className="w-2/3">
+                <div className="w-full md:w-1/2 flex md:justify-end mb-20">
+                    <img src="humaaans-graphs.png" alt="" className="max-w-sm" />
                 </div>
             </div>
 

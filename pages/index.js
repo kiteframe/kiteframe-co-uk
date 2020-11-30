@@ -111,6 +111,51 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+
+            <div className="container mx-auto max-w-6xl px-4 pt-28 pb-36">
+                <div className="max-w-xl mx-auto text-center mb-28">
+                    <h2 className="text-4xl text-gray-900 font-bold mb-8">Meet the team</h2>
+                    <div className="w-12 h-1 mx-auto bg-gray-900"/>
+                </div>
+
+                <div className="flex flex-wrap justify-content -mx-10">
+                    <div className="w-full md:w-1/3 flex flex-col items-center px-10 text-center mb-20 space-y-6">
+                        <div className="relative">
+                            <img src="tim.jpeg" alt="Tim Mortimer" className="w-40 lg:w-60 h-40 lg:h-60 rounded-full" />
+                            <div className="absolute top-0 w-40 lg:w-60 h-40 lg:h-60 rounded-full bg-gray-800 opacity-20" />
+                        </div>
+                        <span className="text-gray-900 text-xl">Tim Mortimer</span>
+                        <a href="https://www.linkedin.com/in/kiteframe-tim-mortimer/" className="w-10">
+                            <img src="LI-In-Bug.png" alt="LinkedIn Icon"/>
+                        </a>
+                        <span className="text-gray-900 text-sm">Founder and software developer</span>
+                    </div>
+
+                    <div className="w-full md:w-1/3 flex flex-col items-center px-10 text-center mb-20 space-y-6">
+                        <div className="relative">
+                            <img src="joe.jpeg" alt="Joe Reed" className="w-40 lg:w-60 h-40 lg:h-60 rounded-full" />
+                            <div className="absolute top-0 w-40 lg:w-60 h-40 lg:h-60 rounded-full bg-gray-800 opacity-20" />
+                        </div>
+                        <span className="text-gray-900 text-xl">Joe Reed</span>
+                        <a href="https://www.linkedin.com/in/joe-reed-44a57592/" className="w-10">
+                            <img src="LI-In-Bug.png" alt="LinkedIn Icon"/>
+                        </a>
+                        <span className="text-gray-900 text-sm">Founder and software developer</span>
+                    </div>
+
+                    <div className="w-full md:w-1/3 flex flex-col items-center px-10 text-center mb-20 space-y-6">
+                        <div className="relative">
+                            <img src="louis.jpeg" alt="Louis Smith" className="w-40 lg:w-60 h-40 lg:h-60 rounded-full" />
+                            <div className="absolute top-0 w-40 lg:w-60 h-40 lg:h-60 rounded-full bg-gray-800 opacity-20" />
+                        </div>
+                        <span className="text-gray-900 text-xl">Louis Smith</span>
+                        <a href="https://www.linkedin.com/in/louis-smith-221a30137/" className="w-10">
+                            <img src="LI-In-Bug.png" alt="LinkedIn Icon"/>
+                        </a>
+                        <span className="text-gray-900 text-sm">Founder and software developer</span>
+                    </div>
+                </div>
+            </div>
         </Layout>
     );
 }

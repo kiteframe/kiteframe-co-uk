@@ -11,7 +11,7 @@ export default function Home() {
                 </div>
 
                 <div className="w-full md:w-1/2 flex md:justify-end mb-20">
-                    <img src="humaaans-graphs.png" alt="" className="max-w-sm" />
+                    <img src="humaaans-graphs.png" alt="" className="max-w-sm"/>
                 </div>
             </div>
 
@@ -122,8 +122,9 @@ export default function Home() {
                 <div className="flex flex-wrap justify-content -mx-10">
                     <div className="w-full md:w-1/3 flex flex-col items-center px-10 text-center mb-20 space-y-6">
                         <div className="relative">
-                            <img src="tim.jpeg" alt="Tim Mortimer" className="w-40 lg:w-60 h-40 lg:h-60 rounded-full" />
-                            <div className="absolute top-0 w-40 lg:w-60 h-40 lg:h-60 rounded-full bg-gray-800 opacity-20" />
+                            <img src="tim.jpeg" alt="Tim Mortimer" className="w-40 lg:w-60 h-40 lg:h-60 rounded-full"/>
+                            <div
+                                className="absolute top-0 w-40 lg:w-60 h-40 lg:h-60 rounded-full bg-gray-800 opacity-20"/>
                         </div>
                         <span className="text-gray-900 text-xl">Tim Mortimer</span>
                         <a href="https://www.linkedin.com/in/kiteframe-tim-mortimer/" className="w-10">
@@ -134,8 +135,9 @@ export default function Home() {
 
                     <div className="w-full md:w-1/3 flex flex-col items-center px-10 text-center mb-20 space-y-6">
                         <div className="relative">
-                            <img src="joe.jpeg" alt="Joe Reed" className="w-40 lg:w-60 h-40 lg:h-60 rounded-full" />
-                            <div className="absolute top-0 w-40 lg:w-60 h-40 lg:h-60 rounded-full bg-gray-800 opacity-20" />
+                            <img src="joe.jpeg" alt="Joe Reed" className="w-40 lg:w-60 h-40 lg:h-60 rounded-full"/>
+                            <div
+                                className="absolute top-0 w-40 lg:w-60 h-40 lg:h-60 rounded-full bg-gray-800 opacity-20"/>
                         </div>
                         <span className="text-gray-900 text-xl">Joe Reed</span>
                         <a href="https://www.linkedin.com/in/joe-reed-44a57592/" className="w-10">
@@ -146,14 +148,27 @@ export default function Home() {
 
                     <div className="w-full md:w-1/3 flex flex-col items-center px-10 text-center mb-20 space-y-6">
                         <div className="relative">
-                            <img src="louis.jpeg" alt="Louis Smith" className="w-40 lg:w-60 h-40 lg:h-60 rounded-full" />
-                            <div className="absolute top-0 w-40 lg:w-60 h-40 lg:h-60 rounded-full bg-gray-800 opacity-20" />
+                            <img src="louis.jpeg" alt="Louis Smith" className="w-40 lg:w-60 h-40 lg:h-60 rounded-full"/>
+                            <div
+                                className="absolute top-0 w-40 lg:w-60 h-40 lg:h-60 rounded-full bg-gray-800 opacity-20"/>
                         </div>
                         <span className="text-gray-900 text-xl">Louis Smith</span>
                         <a href="https://www.linkedin.com/in/louis-smith-221a30137/" className="w-10">
                             <img src="LI-In-Bug.png" alt="LinkedIn Icon"/>
                         </a>
                         <span className="text-gray-900 text-sm">Founder and software developer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-teal-400 pt-28 pb-36">
+                <div className="container mx-auto text-white text-center space-y-12">
+                    <h2 className="text-4xl font-bold text-gray-900">Testimonials</h2>
+                    <div className="w-12 h-1 mx-auto bg-gray-900"/>
+                    <div className="max-w-3xl mx-auto text-center">
+                        <p className="text-2xl font-normal text-gray-900 mb-8">
+                            "I have had the pleasure of working with KiteFrame and I was really impressed with their professionalism. The software they delivered was thoroughly tested and they were an easy partner to work with."</p>
+                        <span className="text-lg text-gray-900">Fredrik Mäkilä | Takanoha Limited</span>
                     </div>
                 </div>
             </div>

@@ -167,8 +167,46 @@ export default function Home() {
                     <div className="w-12 h-1 mx-auto bg-gray-900"/>
                     <div className="max-w-3xl mx-auto text-center">
                         <p className="text-2xl font-normal text-gray-900 mb-8">
-                            "I have had the pleasure of working with KiteFrame and I was really impressed with their professionalism. The software they delivered was thoroughly tested and they were an easy partner to work with."</p>
+                            "I have had the pleasure of working with KiteFrame and I was really impressed with their
+                            professionalism. The software they delivered was thoroughly tested and they were an easy
+                            partner to work with."</p>
                         <span className="text-lg text-gray-900">Fredrik Mäkilä | Takanoha Limited</span>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-gray-200 pt-28 pb-16">
+                <div className="container mx-auto px-8 text-gray-900">
+                    <div className="max-w-xl mx-auto text-center mb-28">
+                        <div className="max-w-xl mx-auto text-center space-y-8 mb-8">
+                            <h2 className="text-4xl text-purple-800 font-bold">Contact us</h2>
+                            <div className="w-12 h-1 mx-auto bg-purple-800"/>
+                        </div>
+                        <p className="text-black-900 text-lg mb-8">contact@kiteframe.co.uk</p>
+                        <form className="w-3xl" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                            <div className="hidden">
+                                <input name="bot-field"/>
+                            </div>
+                            <div className="flex">
+                                <label className="hidden" htmlFor="name">Name</label>
+                                <input className="w-full px-4 py-2 mb-4 font-light placeholder-gray-500 text-gray-900" type="text" name="name" id="name" placeholder="Name" required/>
+                            </div>
+                            <div>
+                                <label className="hidden" htmlFor="email">Email</label>
+                                <input className="w-full px-4 py-2 mb-4 font-light placeholder-gray-500 text-gray-900" type="text" name="email" id="email" placeholder="Email" required/>
+                            </div>
+                            <div>
+                                <label className="hidden" htmlFor="subject">Subject</label>
+                                <input className="w-full px-4 py-2 mb-4 font-light placeholder-gray-500 text-gray-900" type="text" name="subject" id="subject" placeholder="Subject" required/>
+                            </div>
+                            <div>
+                                <label className="hidden" htmlFor="message">Message</label>
+                                <textarea className="w-full h-32 px-4 py-2 mb-4 font-light placeholder-gray-500 text-gray-900" name="message" id="message" placeholder="Type your message here..." required/>
+                            </div>
+                            <div>
+                                <button className="w-full px-4 py-2 bg-purple-700 hover:bg-purple-800 text-white font-medium" type="submit">Send</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

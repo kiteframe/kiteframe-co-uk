@@ -5,7 +5,7 @@ import Layout from "../../components/layout";
 export default function Guide({meta, content}) {
     return (
         <Layout>
-            <article className="container mx-auto px-4">
+            <article className="container mx-auto px-4 py-12">
                 <header className="pt-6 xl:pb-6">
                     <div className="space-y-3 text-center">
                         <dl className="space-y-10 text-center">

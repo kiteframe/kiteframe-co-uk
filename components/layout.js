@@ -20,7 +20,7 @@ export default function Layout({children}) {
                     </Link>
                 </nav>
             </div>
-            <div className="py-12">
+            <div>
                 {children}
             </div>
         </>

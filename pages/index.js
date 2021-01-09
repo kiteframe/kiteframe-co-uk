@@ -320,7 +320,7 @@ export default function Home() {
       </div>
 
       <div className="bg-teal-400 pt-20 md:pt-28 pb-24 md:pb-36">
-        <div className="container mx-auto text-white text-center space-y-8 md:space-y-12">
+        <div className="container mx-auto text-white text-center space-y-8 md:space-y-12 px-4">
           <h2 className="text-2xl md:text-4xl font-bold text-gray-900">
             Testimonials
           </h2>
@@ -339,7 +339,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-gray-200 pt-28 pb-16" id="contact-us">
+      <div className="bg-gray-200 pt-20 md:pt-28 pb-16" id="contact-us">
         <div className="container mx-auto px-8 text-gray-900">
           <div className="max-w-xl mx-auto text-center mb-28">
             <div className="max-w-xl mx-auto text-center space-y-8 mb-8">

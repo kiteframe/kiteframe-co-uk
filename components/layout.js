@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function Layout({children}) {
     return (
         <>
-            <div className="max-w-3xl mx-auto flex justify-between items-center px-4 py-8 text-gray-900">
+            <div className="max-w-3xl flex flex-col md:flex-row mx-auto justify-between items-center px-4 py-5 md:py-8 text-gray-900">
                 <Link href="/">
-                    <a className="flex items-center">
+                    <a className="flex items-center mb-3 md:mb-0">
                         <img src="/kiteframe-logo.png" alt="KiteFrame Logo" className="h-16"/>
                         <span className="font-semibold text-3xl ml-2">KiteFrame</span>
                     </a>

@@ -175,7 +175,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="bg-gray-200 pt-28 pb-16">
+            <div className="bg-gray-200 pt-28 pb-16" id="contact-us">
                 <div className="container mx-auto px-8 text-gray-900">
                     <div className="max-w-xl mx-auto text-center mb-28">
                         <div className="max-w-xl mx-auto text-center space-y-8 mb-8">

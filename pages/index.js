@@ -18,7 +18,7 @@ export default function Home() {
             <div className="bg-purple-600 px-4 pt-20 pb-24 md:pt-28 md:pb-36">
                 <div className="container mx-auto text-white text-center space-y-6 md:space-y-8">
                     <h2 className="text-2xl md:text-4xl font-bold">Product-focussed software engineers</h2>
-                    <div className="w-12 h-1 mx-auto bg-white"/>
+                    <hr className="w-12 mx-auto border-2 border-white"/>
                     <div className="max-w-xl mx-auto text-center">
                         <span className="md:text-lg">Partnering with KiteFrame circumvents the months required to grow a team with the architectural, testing and operational expertise demanded by today's complex businesses.</span>
                     </div>
@@ -116,7 +116,7 @@ export default function Home() {
             <div className="container mx-auto max-w-6xl px-4 pt-20 md:pt-28 pb-24 md:pb-36">
                 <div className="max-w-xl mx-auto text-center mb-16 md:mb-28">
                     <h2 className="text-2xl md:text-4xl text-gray-900 font-bold mb-8">Meet the team</h2>
-                    <div className="w-12 h-1 mx-auto bg-gray-900"/>
+                    <hr className="w-12 mx-auto border-2 border-gray-900"/>
                 </div>
 
                 <div className="flex flex-wrap justify-content md:-mx-10">
@@ -164,7 +164,7 @@ export default function Home() {
             <div className="bg-teal-400 pt-20 md:pt-28 pb-24 md:pb-36">
                 <div className="container mx-auto text-white text-center space-y-8 md:space-y-12">
                     <h2 className="text-2xl md:text-4xl font-bold text-gray-900">Testimonials</h2>
-                    <div className="w-12 h-1 mx-auto bg-gray-900"/>
+                    <hr className="w-12 mx-auto border-2 border-gray-900"/>
                     <div className="max-w-3xl mx-auto text-center">
                         <p className="text-xl md:text-2xl font-normal text-gray-900 mb-8">
                             "I have had the pleasure of working with KiteFrame and I was really impressed with their
@@ -180,7 +180,7 @@ export default function Home() {
                     <div className="max-w-xl mx-auto text-center mb-28">
                         <div className="max-w-xl mx-auto text-center space-y-8 mb-8">
                             <h2 className="text-2xl md:text-4xl text-purple-800 font-bold">Contact us</h2>
-                            <div className="w-12 h-1 mx-auto bg-purple-800"/>
+                            <hr className="w-12 mx-auto border-2 border-purple-800"/>
                         </div>
                         <p className="text-black-900 md:text-lg mb-8">contact@kiteframe.co.uk</p>
                         <form className="w-3xl" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">

@@ -11,7 +11,7 @@ export default function Home() {
                 </div>
 
                 <div className="w-full md:w-1/2 flex md:justify-end">
-                    <img src="humaaans-graphs.png" alt="" className="max-w-sm w-full mx-auto"/>
+                    <img src="humaaans-graphs.png" alt="Graphic of a person surrounded by chart imagery" className="max-w-sm w-full mx-auto"/>
                 </div>
             </div>
 

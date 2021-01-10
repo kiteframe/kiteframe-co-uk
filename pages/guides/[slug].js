@@ -39,7 +39,7 @@ export default function Guide({ meta, content }) {
           className="prose mx-auto"
           dangerouslySetInnerHTML={{ __html: content }}
         />
-        <div id="commento"/>
+        <div className="max-w-3xl mx-auto" id="commento"/>
       </article>
     </Layout>
   );

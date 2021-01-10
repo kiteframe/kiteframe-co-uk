@@ -2,8 +2,18 @@ import { getAllGuides, getGuideBySlug } from "../../lib/guides";
 import markdownToHtml from "../../lib/markdown";
 import Layout from "../../components/layout";
 import Head from "next/head";
+import {useEffect} from "react";
 
-export default function Guide({ meta, content }) {
+export default function Guide({ slug, meta, content }) {
+  useEffect(() => {
+    window.parent = {
+      location: {
+        host: 'www.kiteframe.co.uk',
+        pathname: `/guides/${slug}`,
+      }
+    };
+  });
+
   return (
     <Layout>
       <Head>

@@ -46,7 +46,7 @@ export default function Guide({ slug, meta, content }) {
           </div>
         </header>
         <div
-          className="prose mx-auto"
+          className="prose mx-auto pb-20"
           dangerouslySetInnerHTML={{ __html: content }}
         />
         <div className="max-w-3xl mx-auto" id="commento"/>

@@ -1,4 +1,5 @@
 import Layout from "../components/layout";
+import Slider from "react-slick";
 
 export default function Home() {
   return (
@@ -253,8 +254,8 @@ export default function Home() {
           <hr className="w-12 mx-auto border-2 border-gray-900" />
         </div>
 
-        <div className="flex flex-wrap justify-content md:-mx-10">
-          <div className="w-full md:w-1/3 flex flex-col items-center px-10 text-center mb-14 md:mb-20 space-y-6">
+        <div className="flex flex-wrap">
+          <div className="w-full md:w-1/3 flex flex-col items-center md:px-10 text-center mb-14 md:mb-20 space-y-6">
             <div className="relative">
               <img
                 src="tim.jpeg"
@@ -275,7 +276,7 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="w-full md:w-1/3 flex flex-col items-center px-10 text-center mb-14 md:mb-20 space-y-6">
+          <div className="w-full md:w-1/3 flex flex-col items-center md:px-10 text-center mb-14 md:mb-20 space-y-6">
             <div className="relative">
               <img
                 src="joe.jpeg"
@@ -296,7 +297,7 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="w-full md:w-1/3 flex flex-col items-center px-10 text-center mb-14 md:mb-20 space-y-6">
+          <div className="w-full md:w-1/3 flex flex-col items-center md:px-10 text-center mb-14 md:mb-20 space-y-6">
             <div className="relative">
               <img
                 src="louis.jpeg"
@@ -325,17 +326,31 @@ export default function Home() {
             Testimonials
           </h2>
           <hr className="w-12 mx-auto border-2 border-gray-900" />
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-xl md:text-2xl font-normal text-gray-900 mb-8">
-              "I have had the pleasure of working with KiteFrame and I was
-              really impressed with their professionalism. The software they
-              delivered was thoroughly tested and they were an easy partner to
-              work with."
-            </p>
-            <span className="md:text-lg text-gray-900">
-              Fredrik Mäkilä | Takanoha Limited
-            </span>
-          </div>
+          <Slider dots autoplay autoplaySpeed={6000} className="pb-5">
+            <div className="max-w-3xl mx-auto text-center">
+              <p className="text-xl md:text-2xl font-normal text-gray-900 mb-8">
+                &ldquo;I’ve worked with KiteFrame on multiple projects and have
+                been really impressed with their attention to detail and
+                business acumen. KiteFrame have been able to deliver on time and
+                budget and offer guidance on managing projects long term which
+                has been invaluable.&rdquo;
+              </p>
+              <span className="md:text-lg text-gray-900">
+                Robert Chittock | robertchittock.co.uk
+              </span>
+            </div>
+            <div className="max-w-3xl mx-auto text-center">
+              <p className="text-xl md:text-2xl font-normal text-gray-900 mb-8">
+                &ldquo;I have had the pleasure of working with KiteFrame and I
+                was really impressed with their professionalism. The software
+                they delivered was thoroughly tested and they were an easy
+                partner to work with.&rdquo;
+              </p>
+              <span className="md:text-lg text-gray-900">
+                Fredrik Mäkilä | Takanoha Limited
+              </span>
+            </div>
+          </Slider>
         </div>
       </div>
 

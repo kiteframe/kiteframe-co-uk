@@ -1,10 +1,15 @@
 import { getAllGuides, getGuideBySlug } from "../../lib/guides";
 import markdownToHtml from "../../lib/markdown";
 import Layout from "../../components/layout";
+import Head from "next/head";
 
 export default function Guide({ meta, content }) {
   return (
     <Layout>
+      <Head>
+        <title>{meta.title}</title>
+        <script defer src="https://cdn.commento.io/js/commento.js"/>
+      </Head>
       <article className="container mx-auto px-4 py-12">
         <header className="pt-6 xl:pb-6">
           <div className="space-y-3 text-center">
@@ -34,6 +39,7 @@ export default function Guide({ meta, content }) {
           className="prose mx-auto"
           dangerouslySetInnerHTML={{ __html: content }}
         />
+        <div id="commento"/>
       </article>
     </Layout>
   );

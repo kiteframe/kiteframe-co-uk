@@ -9,7 +9,7 @@ export default function Guide({ slug, meta, content }) {
     window.parent = {
       location: {
         host: 'www.kiteframe.co.uk',
-        pathname: `/guides/${slug}`,
+        pathname: meta.commentoId,
       }
     };
   });

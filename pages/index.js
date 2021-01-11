@@ -375,7 +375,7 @@ export default function Home() {
               <div className="hidden">
                 <input name="bot-field" />
               </div>
-              <input type="hidden" name="form-name" value="contact">
+              <input type="hidden" name="form-name" value="contact" />
               <div className="flex">
                 <label className="hidden" htmlFor="name">
                   Name

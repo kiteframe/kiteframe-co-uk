@@ -11,18 +11,22 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <title />
-          <script
-            async
-            defer
-            data-domain="kiteframe.co.uk"
-            src="https://plausible.io/js/plausible.outbound-links.js"
-          />
-          <script
-            dangerouslySetInnerHTML={{
-              __html:
-                "window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }",
-            }}
-          />
+          {process.env.NODE_ENV === "production" && (
+            <>
+              <script
+                async
+                defer
+                data-domain="kiteframe.co.uk"
+                src="https://plausible.io/js/plausible.outbound-links.js"
+              />
+              <script
+                dangerouslySetInnerHTML={{
+                  __html:
+                    "window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }",
+                }}
+              />
+            </>
+          )}
         </Head>
         <body>
           <Main />

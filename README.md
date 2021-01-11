@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0f0f3fe3-686f-4154-bf25-5e593f1c35f7/deploy-status)](https://app.netlify.com/sites/kiteframe/deploys)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped
 with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

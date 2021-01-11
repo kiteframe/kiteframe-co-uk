@@ -368,7 +368,7 @@ export default function Home() {
             </p>
             <form
               className="w-3xl"
-              name="contact"
+              name="contact-us"
               method="POST"
               netlify-honeypot="bot-field"
               data-netlify="true"

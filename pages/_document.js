@@ -11,7 +11,7 @@ class MyDocument extends Document {
             <Html>
                 <Head>
                     <title/>
-                    <script async defer data-domain="kiteframe.co.uk" src="https://plausible.io/js/plausible.js"/>
+                    <script async defer data-domain="kiteframe.co.uk" src="https://plausible.io/js/plausible.outbound-links.js"/>
                 </Head>
                 <body>
                 <Main />

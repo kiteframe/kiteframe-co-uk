@@ -370,12 +370,12 @@ export default function Home() {
               className="w-3xl"
               name="contact"
               method="POST"
-              netlifyHoneypot="bot-field"
-              dataNetlify="true"
+              netlify-honeypot="bot-field"
             >
               <div className="hidden">
                 <input name="bot-field" />
               </div>
+              <input type="hidden" name="form-name" value="contact">
               <div className="flex">
                 <label className="hidden" htmlFor="name">
                   Name

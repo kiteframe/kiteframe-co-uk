@@ -1,0 +1,3 @@
+[[redirects]]
+  from = "/post/aggregate-design-transactional-consistency"
+  to = "/guides/aggregate-design-transactional-consistency"

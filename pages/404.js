@@ -1,13 +1,10 @@
 import { useEffect } from "react";
+import Error from 'next/error';
 
 export default function Custom404() {
   useEffect(() => {
     window.plausible("404", { props: { path: document.location.pathname } });
   });
 
-  return (
-    <>
-      <h1>404 - Page Not Found</h1>
-    </>
-  );
+  return <Error statusCode={404} />;
 }

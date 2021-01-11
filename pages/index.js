@@ -368,10 +368,10 @@ export default function Home() {
             </p>
             <form
               className="w-3xl"
-              name="contact-us"
+              name="contact"
               method="POST"
-              netlify-honeypot="bot-field"
-              data-netlify="true"
+              netlifyHoneypot="bot-field"
+              dataNetlify="true"
             >
               <div className="hidden">
                 <input name="bot-field" />

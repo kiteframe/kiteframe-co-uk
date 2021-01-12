@@ -18,6 +18,7 @@ export default function Guide({ slug, meta, content }) {
     <Layout>
       <Head>
         <title>{meta.title}</title>
+        <meta name="description" content={meta.description} />
         <script defer src="https://cdn.commento.io/js/commento.js" />
       </Head>
       <article className="container mx-auto px-4 py-12">

@@ -7,6 +7,10 @@ export default function Home() {
     <Layout>
       <Head>
         <title>PHP Developers | KiteFrame</title>
+        <meta
+          name="description"
+          content="KiteFrame accelerates the development of your PHP-based platform. We help CTOs build well-architected software that gives them the freedom to confidently adapt their technology strategy to changing business needs."
+        />
       </Head>
 
       <div className="container flex flex-wrap items-center mx-auto max-w-5xl px-4 pt-8 md:pt-14 pb-10 md:pb-16">

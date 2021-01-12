@@ -10,8 +10,8 @@ export default function Home() {
       </Head>
 
       <div className="container flex flex-wrap items-center mx-auto max-w-5xl px-4 pt-8 md:pt-14 pb-10 md:pb-16">
-        <div className="text-center md:text-left w-full md:w-1/2 mb-10 md:mb-20">
-          <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
+        <div className="flex flex-col justify-items-center text-center md:text-left w-full md:w-1/2 mb-10 md:mb-0">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight mb-6">
             Accelerate the development of your PHP-based platform
           </h1>
           <span className="text-lg md:text-xl font-normal text-gray-900">
@@ -25,7 +25,7 @@ export default function Home() {
           <img
             src="humaaans-graphs.png"
             alt="Graphic of a person surrounded by chart imagery"
-            className="max-w-sm w-full mx-auto"
+            className="max-w-sm w-2/5 md:w-3/5 mx-auto"
           />
         </div>
       </div>

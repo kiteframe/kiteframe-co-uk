@@ -7,7 +7,7 @@ export default function Layout({ children }) {
         <Link href="/">
           <a className="flex items-center mb-3 md:mb-0">
             <img
-              src="/kiteframe-logo.png"
+              src="/kiteframe-logo.svg"
               alt="KiteFrame Logo"
               className="h-16"
             />

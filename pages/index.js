@@ -335,7 +335,7 @@ export default function Home() {
             Testimonials
           </h2>
           <hr className="w-12 mx-auto border-2 border-gray-900" />
-          <Slider dots autoplay autoplaySpeed={6000} className="pb-5">
+          <Slider dots arrows={false} autoplay={true} autoplaySpeed={6000} className="pb-5">
             <div className="max-w-3xl mx-auto text-center">
               <p className="text-xl md:text-2xl font-normal text-gray-900 mb-8">
                 &ldquo;I’ve worked with KiteFrame on multiple projects and have

@@ -8,7 +8,10 @@ export default function Guides({ guides }) {
     <Layout>
       <Head>
         <title>Guides | KiteFrame</title>
-        <meta name="description" content="Read the latest published guides from KiteFrame."/>
+        <meta
+          name="description"
+          content="Read the latest published guides from KiteFrame."
+        />
       </Head>
 
       <div className="max-w-3xl mx-auto px-4 py-12 divide-y divide-y-200">

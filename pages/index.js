@@ -1,9 +1,14 @@
 import Layout from "../components/layout";
 import Slider from "react-slick";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <Layout>
+      <Head>
+        <title>PHP Developers | KiteFrame</title>
+      </Head>
+
       <div className="container flex flex-wrap items-center mx-auto max-w-5xl px-4 pt-8 md:pt-14 pb-10 md:pb-16">
         <div className="text-center md:text-left w-full md:w-1/2 mb-10 md:mb-20">
           <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">

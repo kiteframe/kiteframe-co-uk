@@ -3,6 +3,7 @@ import markdownToHtml from "../../lib/markdown";
 import Layout from "../../components/layout";
 import Head from "next/head";
 import { useEffect } from "react";
+import moment from "moment";
 
 export default function Guide({ slug, meta, content }) {
   useEffect(() => {
@@ -28,8 +29,8 @@ export default function Guide({ slug, meta, content }) {
               <div>
                 <dt className="sr-only">Published on</dt>
                 <dd className="text-base leading-6 font-medium text-gray-500">
-                  <time dateTime="2020-11-19">
-                    Thursday 19th November, 2020
+                  <time dateTime={meta.date}>
+                    {moment(meta.date).format("dddd Do MMMM, YYYY")}
                   </time>
                 </dd>
               </div>

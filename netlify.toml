@@ -10,5 +10,5 @@ package = "@netlify/plugin-sitemap"
 
   [plugins.inputs]
   exclude = [
-    '/404',
+    './out/404',
   ]

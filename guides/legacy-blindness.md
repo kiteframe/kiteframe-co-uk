@@ -10,7 +10,7 @@ Legacy blindness is a term coined by Eric Evans - the first time I heard it was 
 
 On the past few software projects I've worked on, I've observed exactly this phenomenon, and have witnessed first hand the effect it can have on a project.
 
-Part of our job as software developers is to talk to business experts, and drill down into the domain, the events that occur, the objects that we might model, and the rules that govern the way that the business works. In doing so, we learn the vocabulary that the business uses to talk about their processes. We can then use that to create useful models in the software, that hopefully are able to evolve to accommodate new requirements as they come up, by closely mirroring the real world processes.
+Part of our job as software developers is to talk to business experts, and drill down into the domain, the events that occur, the objects that we might model, and the rules that govern the way that the business works. In doing so, we learn the vocabulary that the business uses to talk about their processes. We can then use that to create useful models in the software that are able to evolve and accommodate new requirements as they come up by closely mirroring the real world processes.
 
 To quote Eric Evans again (this time from [his talk at DDD Europe 2019](https://youtu.be/pMuiVlnGqjk?t=291)):
 
@@ -27,7 +27,7 @@ However, if the way that the business thinks about the problem space is tightly 
 
 It's easy as a developer to treat all problems the same - implement the logic, satisfy the acceptance criteria, and never really worry whether you're working in ice cream distribution or car insurance.
 
-However, to make your model truly useful, maintainable, and to write the best software that you can, you ultimately have to educate yourself in the domain in which you are working.
+However, to make your model truly useful and maintainable, and to also write the best software that you can, you ultimately have to educate yourself in the domain in which you are working.
 
 This will allow you to have more productive conversations with the domain experts, help you ask more specific questions, and find edge cases or new requirements more efficiently.
 
@@ -47,7 +47,7 @@ If you're looking for a framework to base workshops around, event storming may b
 
 It's usually dangerous to attempt to replace existing software all at once. As a result, there will be a time when our software coexists alongside the existing software. Often, we will need to integrate the two.
 
-It's important to decouple the new software from the existing wherever we can, so that the structures and language of the existing doesn't leak into our new software and affect our judgement and model.
+It's important to decouple the new software from the existing wherever we can, so that the structures and language of the existing system doesn't leak into our new software and affect our judgement and model.
 
 There are technical solutions we can use here. One example could be queues or messaging infrastructure, with a separate module for integrating with the existing software that lives outside our new application, listening to events in the new software and keeping the existing software up to date. Once we have replaced the existing software, the module can be unplugged, and there is no sign in our new application that the old software ever existed.
 
@@ -55,12 +55,12 @@ There are technical solutions we can use here. One example could be queues or me
 
 While it is important to avoid the pitfall of accidentally rewriting legacy software line for line, the legacy software is legacy for a reason - it will solve a lot of the business problems, and often get a lot of the modelling right.
 
-Watch and question users using the existing software, and see which bits work well and which bits are causing the issues. Keep an eye out for any workarounds or 'hacks' that users use to fit their business processes into the system. Listen for any words used by the users or domain experts, that aren't present in the software, and take note of these translations - it's gold when a user points at a form field and says 'well this is *really* the...'
+Watch and question users using the existing software, and see which bits work well and which bits are causing the issues. Keep an eye out for any workarounds or 'hacks' that users use to fit their business processes into the system. Listen for any words used by the users or domain experts that aren't present in the software. Take note of these translations - it's gold when a user points at a form field and says 'well this is *really* the...'
 
-By making yourself familiar with the legacy software, and its positives and negatives, you'll be able to do a better job at writing the new software, but also be able to spot language being used that is legacy software specific, and gently help move the team towards using the new, more useful and more accurate language of the domain when talking about requirements or user stories, and when writing the UI.
+By making yourself familiar with the legacy software, you can also spot language that is legacy software specific, and gently nudge the team towards using more useful and more accurate domain language when talking about requirements or user stories, and when writing the UI.
 
 # Summary
 
-Step 1 of avoiding legacy blindness is to learn to recognise it. Try to get back to the fundamental business concepts, and where the business wants to go, rather than getting hung up on how things are currently done.
+Step one of avoiding legacy blindness is to learn to recognise it. Try to get back to the fundamental business concepts, and where the business wants to go, rather than getting hung up on how things are currently done.
 
 Learn about the domain, collaborate closely with domain experts, and learn the lessons that are to be learned from the existing software, while always refining your model to be the best it can be at reaching the goals of the project.

@@ -7,3 +7,8 @@ package = "netlify-plugin-cache-nextjs"
 
 [[plugins]]
 package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+  exclude = [
+    '/404',
+  ]

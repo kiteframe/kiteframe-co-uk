@@ -2,6 +2,7 @@ import Layout from "../../components/layout";
 import Head from "next/head";
 import { getAllGuides } from "../../lib/guides";
 import Link from "next/link";
+import moment from "moment";
 
 export default function Guides({ guides }) {
   return (
@@ -33,7 +34,9 @@ export default function Guides({ guides }) {
               <dl>
                 <dt className="sr-only">Published on</dt>
                 <dd className="text-base leading-6 font-medium text-gray-500">
-                  <time dateTime={guide.meta.date}>{guide.meta.date}</time>
+                  <time dateTime={guide.meta.date}>
+                    {moment(guide.meta.date).format("Do MMMM, YYYY")}
+                  </time>
                 </dd>
               </dl>
               <div className="space-y-5 xl:col-span-3">

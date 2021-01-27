@@ -49,7 +49,7 @@ It's usually dangerous to attempt to replace existing software all at once. As a
 
 It's important to decouple the new software from the existing wherever we can, so that the structures and language of the existing system doesn't leak into our new software and affect our judgement and model.
 
-There are technical solutions we can use here. One example could be queues or messaging infrastructure, with a separate module for integrating with the existing software that lives outside our new application, listening to events in the new software and keeping the existing software up to date. Once we have replaced the existing software, the module can be unplugged, and there is no sign in our new application that the old software ever existed.
+An anticorruption layer is a technical solution that we can use to help us do this. We can isolate the code for integration with the existing software within a separate module, and leverage infrastructure such as queues or event streams to keep the old system up to date. Once we have replaced the existing software, the module can be unplugged, leaving no sign in our new application that the replaced software ever existed.
 
 # Learn from the existing software
 

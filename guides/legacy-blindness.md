@@ -1,6 +1,6 @@
 ---
 title: "What is legacy blindness, and how can I avoid it?"
-description: Legacy software has a strong influence over the way that we think about a domain; it is crucial to not fall into the trap of reimplementing the same solutions, by employing tactics to learn from its models and improve upon them.
+description: Legacy software has a strong influence over the way that we think about a domain; we can use tactics to learn from its models and improve upon them, while avoiding falling into the trap of reimplementing the same solutions.
 author: Joe Reed
 date: "2021-01-27"
 commentoId: 165f56fa-2842-4060-b250-5f5e7c5188a8

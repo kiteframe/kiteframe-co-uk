@@ -21,9 +21,9 @@ Often, the business processes are themselves defined (and constrained) by the ex
 
 However, if the way that the business thinks about the problem space is tightly linked to the current solution, it can be difficult to solve these problems, and the team can find themselves effectively reimplementing the existing system.
 
-# How do we avoid the trap of legacy blindness?
+## How do we avoid the trap of legacy blindness?
 
-## Educating ourselves on the domain
+### Educating ourselves on the domain
 
 It's easy as a developer to treat all problems the same - implement the logic, satisfy the acceptance criteria, and never really worry whether you're working in ice cream distribution or car insurance.
 
@@ -33,17 +33,17 @@ This will allow you to have more productive conversations with the domain expert
 
 If there is literature available in your domain, read it, and form your own mental models of the domain. You can align these with the specific ones from the company,  prod and probe your own understanding, and identify which aspects of the vocabulary are driven by the domain, and which are purely constructs in the existing software.
 
-## Discussing how the problem would be solved without software
+### Discussing how the problem would be solved without software
 
 If everything happens in the existing software, then rather than asking how things are done at the business, it's often a useful technique to take a step back and ask how the problem would be solved in the days before software, or if software weren't available to us now.
 
 You'll find new words and concepts, identify different contexts (through physical hand off of paperwork for example), and cut through the model imposed on the business processes by existing software.
 
-## Event storming
+### Event storming
 
 If you're looking for a framework to base workshops around, event storming may be useful to you. It's a lightweight and flexible way of investigating a business domain, and can also help get you out of the mindset of the existing software's UI, getting back to the fundamentals with events, users, commands, external systems - universal truths of the business that exist outside the existing software.
 
-## Decouple ourselves from the existing software
+### Decouple ourselves from the existing software
 
 It's usually dangerous to attempt to replace existing software all at once. As a result, there will be a time when our software coexists alongside the existing software. Often, we will need to integrate the two.
 
@@ -51,7 +51,7 @@ It's important to decouple the new software from the existing wherever we can, s
 
 An anticorruption layer is a technical solution that we can use to help us do this. We can isolate the code for integration with the existing software within a separate module, and leverage infrastructure such as queues or event streams to keep the old system up to date. Once we have replaced the existing software, the module can be unplugged, leaving no sign in our new application that the replaced software ever existed.
 
-# Learn from the existing software
+## Learn from the existing software
 
 While it is important to avoid the pitfall of accidentally rewriting legacy software line for line, the legacy software is legacy for a reason - it will solve a lot of the business problems, and often get a lot of the modelling right.
 
@@ -59,7 +59,7 @@ Watch and question users using the existing software, and see which bits work we
 
 By making yourself familiar with the legacy software, you can also spot language that is legacy software specific, and gently nudge the team towards using more useful and more accurate domain language when talking about requirements or user stories, and when writing the UI.
 
-# Summary
+## Summary
 
 Step one of avoiding legacy blindness is to learn to recognise it. Try to get back to the fundamental business concepts, and where the business wants to go, rather than getting hung up on how things are currently done.
 

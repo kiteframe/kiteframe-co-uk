@@ -53,7 +53,7 @@ export default function Home() {
       </div>
 
       <div className="bg-gray-200 pt-20 md:pt-28 pb-12 md:pb-16">
-        <div className="container mx-auto px-8 text-gray-900">
+        <div className="container mx-auto px-10 text-gray-900">
           <div className="max-w-xl mx-auto text-center mb-20 md:mb-28">
             <h2 className="text-2xl md:text-4xl text-purple-800 font-bold mb-4">
               What we do

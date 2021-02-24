@@ -330,7 +330,7 @@ export default function Home() {
               <img src="LI-In-Bug.png" alt="LinkedIn Icon" />
             </a>
             <span className="text-gray-900 text-sm">
-              Founder and software developer
+              Software developer
             </span>
           </div>
         </div>

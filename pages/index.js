@@ -15,13 +15,15 @@ export default function Home() {
 
       <div className="container flex flex-wrap items-center mx-auto max-w-5xl px-4 pt-8 md:pt-14 pb-10 md:pb-16">
         <div className="flex flex-col justify-items-center text-center md:text-left w-full md:w-1/2 mb-10 md:mb-0">
-          <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight mb-6">
-            Accelerate the development of your PHP-based platform
+          <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 leading-tight mb-6">
+            When you take a delivery mindset, you reduce risk and progress with
+            confidence.
           </h1>
           <span className="text-lg md:text-xl font-normal text-gray-900">
-            We help CTOs build well-architected software that gives them the
-            freedom to confidently adapt their technology strategy to changing
-            business needs.
+            Time to market is crucial. Early feedback enables you to
+            continuously adapt your strategy and stay on track. With the help of
+            our pragmatic advice, build capability, and architectural expertise,
+            you can accelerate along the road to profitability.
           </span>
         </div>
 

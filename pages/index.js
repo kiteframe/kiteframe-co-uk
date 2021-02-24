@@ -43,7 +43,7 @@ export default function Home() {
           </h2>
           <hr className="w-12 mx-auto border-2 border-white" />
           <div className="max-w-xl mx-auto text-center">
-            <span className="md:text-lg">
+            <span className="text-lg md:text-xl">
               Partnering with KiteFrame circumvents the months required to grow
               a team with the architectural, testing and operational expertise
               demanded by today's complex businesses.
@@ -58,7 +58,7 @@ export default function Home() {
             <h2 className="text-2xl md:text-4xl text-purple-800 font-bold mb-4">
               What we do
             </h2>
-            <p>
+            <p className="text-lg md:text-xl">
               KiteFrame use a set of practices and principles to build complex
               internal business systems and user-facing products in a fast yet
               maintainable way - continuously delivering bug-free code with

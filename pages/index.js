@@ -87,7 +87,7 @@ export default function Home() {
                   </g>
                 </svg>
                 <h3 className="text-xl md:text-2xl text-purple-800 font-medium pb-4 md:pb-8">
-                  Domain-driven Design
+                  Domain-Driven Design
                 </h3>
                 <p>
                   We believe that to build effective software in complex
@@ -123,7 +123,7 @@ export default function Home() {
                   />
                 </svg>
                 <h3 className="text-xl md:text-2xl text-purple-800 font-medium pb-4 md:pb-8">
-                  Test-driven development
+                  Test-Driven Development
                 </h3>
                 <p>
                   In order to achieve to fast flow, it is absolutely essential
@@ -151,7 +151,7 @@ export default function Home() {
                   <polygon points="57.2,71.3 50.1,75.5 43.2,71.3 43.2,79 35.3,79 50.2,93.9 65,79 57.2,79 " />
                 </svg>
                 <h3 className="text-xl md:text-2xl text-purple-800 font-medium pb-4 md:pb-8">
-                  Continuous delivery
+                  Continuous Delivery
                 </h3>
                 <p>
                   Releasing relatively small increments more often reduces the

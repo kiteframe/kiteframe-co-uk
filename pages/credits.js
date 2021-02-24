@@ -16,7 +16,7 @@ export default function Credits() {
             continuous delivery by Robert Bjurshagen from the Noun Project
           </li>
           <li>devops by Vectors Point from the Noun Project</li>
-          <li>PHP by Ilham Fitrotul Hayat from the Noun Project</li>
+          <li>coding by adindar from the Noun Project</li>
           <li>Cloud Database by ProSymbols from the Noun Project</li>
         </ul>
       </div>

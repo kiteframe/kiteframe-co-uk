@@ -9,14 +9,14 @@ import {
 const sectionPaddingClasses = "pt-20 md:pt-28 pb-24 md:pb-36";
 
 export default function Home() {
+  const description =
+    "KiteFrame is a London-based software agency without the baggage. We work closely with you to cut to the core of your problem, and write the code to start solving it from week one.";
+
   return (
     <Layout>
       <Head>
         <title>Software Developers | KiteFrame</title>
-        <meta
-          name="description"
-          content="KiteFrame is a London-based software agency without the baggage. We work closely with you to cut to the core of your problem, and build the solution to start solving it from iteration one."
-        />
+        <meta name="description" content={description} />
       </Head>
 
       <div className="container flex flex-wrap items-center mx-auto max-w-5xl px-4 pt-8 md:pt-14 pb-10 md:pb-16">
@@ -25,27 +25,26 @@ export default function Home() {
             Software development for businesses who want to move fast
           </h1>
           <p className="text-lg md:text-xl font-normal text-gray-900">
-            KiteFrame is a London-based software agency without the baggage. We
-            work closely with you to cut to the core of your problem, and write
-            the code to start solving it from week one.
+            {description}
           </p>
         </div>
 
         <div className="w-full md:w-1/2 flex md:justify-end">
-          <img
-            src="humaaans-graphs.png"
-            alt="Graphic of a person surrounded by chart imagery"
-            className="max-w-sm w-2/5 md:w-3/5 mx-auto"
-          />
+          <div className="max-w-sm w-2/5 md:w-3/5 mx-auto">
+            <img
+              src="humaaans-graphs.png"
+              alt="Graphic of a person surrounded by chart imagery"
+            />
+          </div>
         </div>
       </div>
 
-      <div className={`bg-purple-600 px-4 ${sectionPaddingClasses}`}>
-        <div className="container mx-auto text-white text-center space-y-6 md:space-y-8">
+      <div className={`bg-teal-400 px-4 ${sectionPaddingClasses}`}>
+        <div className="container mx-auto text-center space-y-6 md:space-y-8">
           <h2 className="text-2xl md:text-4xl font-bold">
             Delightful software, built to last
           </h2>
-          <hr className="w-12 mx-auto border-2 border-white" />
+          <hr className="w-12 mx-auto border-2 border-gray-900" />
           <div className="flex max-w-xl mx-auto text-center">
             <span className="text-lg md:text-xl">
               We build software engineering excellence into every line of code
@@ -53,6 +52,142 @@ export default function Home() {
               to maintain, allowing us to keep up pace of delivery while
               adapting or pivoting when requirements change.
             </span>
+          </div>
+        </div>
+      </div>
+
+      <div className={`${sectionPaddingClasses}`}>
+        <h2 className="text-2xl md:text-4xl font-bold mb-10 text-center">
+          Projects
+        </h2>
+        <div className="flex flex-wrap">
+          <WorkCard
+            heading="Find my Nightline"
+            subheading="Nightline Association"
+            logo={() => (
+              <img
+                src="nightline-logo.png"
+                className="h-10"
+                alt="Nightline Logo"
+              />
+            )}
+          >
+            <p>
+              Leveraging AWS S3, Lambda and Google sheets to allow service users
+              to easily find their nearest Nightline.
+            </p>
+          </WorkCard>
+
+          <WorkCard
+            heading="xTrade Broker Portal"
+            subheading="HyperionX"
+            logo={() => (
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNzQuMDU3IiBoZWlnaHQ9IjE3NC42ODIiIHZpZXdCb3g9IjAgMCAyMDUuNTQzIDEzMS4wMTEiPjxwYXRoIGQ9Ik0xNTEuMjY5IDEwMy42MmwtOS4zMTUtMTUgOS45NTgtMTUuOTQ5TDE3MS4yIDEwMy42MnptLTI3LjY3NSAwaC0xOS45MzNsNDcuNjQ2LTc2LjIzNEgxNzEuMnptLTI1LjA2Ni0uMTkySDgxLjUxOVY3My42NEg1MS4yNDZ2MjkuNzg3aC0xNi45VjI3LjU3OWgxNi45djI5LjE1OWgzMC4yNzNWMjcuNTc5aDE3LjAwOXptMjUuMDI0LTc2LjA0Mmw5LjI2OCAxNS4wODktOS45NTUgMTUuOTI1LTE5LjItMzEuMDE4ek0xNDAuMDM0IDBINjUuNTA5YTY1LjUwNiA2NS41MDYgMCAxMDAgMTMxLjAxMWg3NC41MjVhNjUuNTA2IDY1LjUwNiAwIDEwMC0xMzEuMDExIiBmaWxsPSIjMTUxYTJjIi8+PC9zdmc+"
+                className="h-10"
+                alt="HX Logo"
+              />
+            )}
+          >
+            <p>
+              Working with HyperionX's team to build a broker administration
+              platform from the ground up.
+            </p>
+          </WorkCard>
+
+          <WorkCard
+            heading="Promotions Platform"
+            subheading="Insyt"
+            logo={() => (
+              <img src="insyt-logo.png" className="h-8" alt="Insyt Logo" />
+            )}
+          >
+            <p>
+              Leading development of a custom promotions platform, with the
+              goals of better UX and load time, and even easier clients and
+              promotion onboarding.
+            </p>
+          </WorkCard>
+
+          <WorkCard
+            heading="Underwriter Admin System"
+            subheading="Uncharted Partners"
+            logo={() => (
+              <img
+                src="uncharted-logo.png"
+                className="h-10"
+                alt="Uncharted Logo"
+              />
+            )}
+          >
+            <p>
+              Working in a fast paced and agile team to develop a bespoke
+              platform for underwriters to review and manage risks.
+            </p>
+          </WorkCard>
+
+          <WorkCard
+            heading="Auditing System"
+            subheading="Keoda"
+            logo={() => (
+              <img src="keoda-logo.jpeg" className="h-8" alt="Keoda Logo" />
+            )}
+          >
+            <p>
+              Working to Keoda to project manage development of auditing
+              software for a travel sustainability company.
+            </p>
+          </WorkCard>
+
+          <WorkCard
+            heading="Customer Service Portal"
+            subheading="Popsa"
+            logo={() => (
+              <img src="popsa-logo.svg" className="h-10" alt="Popsa Logo" />
+            )}
+          >
+            <p>
+              Development of reusable UI components to interact with an internal
+              internal customer service API.
+            </p>
+          </WorkCard>
+        </div>
+      </div>
+
+      <div className={`bg-purple-600 text-white pt-20 md:pt-0`}>
+        <div className="flex flex-wrap items-center">
+          <div className="md:w-1/2 px-10 md:px-16 mb-10 md:mb-0 py-5">
+            <p className="text-xs tracking-widest uppercase font-mono font-bold mb-1">
+              Case Study
+            </p>
+            <h2 className="text-2xl md:text-4xl font-bold mb-2">
+              Fluxonomy: RAID Log Management
+            </h2>
+            <a
+              href="https://fluxonomy.com"
+              target="_blank"
+              rel="noreferrer"
+              className="italic underline inline-block mb-4"
+            >
+              fluxonomy.com
+            </a>
+            <p className="pr-10 mb-2">
+              Our SaaS product for project managers, built to take the pain out
+              of risk management (a classically spreadsheet-based activity.)
+            </p>
+            <p className="mb-2">
+              A fast and responsive React SPA sits in front of a Java and Spring
+              Boot API, and the application stack is deployed and hosted using
+              AWS services.
+            </p>
+          </div>
+
+          <div className="md:w-1/2">
+            <img
+              className="shadow-lg"
+              src="fluxonomy-screenshot.png"
+              alt="A screenshot of the Fluxonomy application, displaying an open Issue with details and timeline of updates"
+            />
           </div>
         </div>
       </div>
@@ -71,7 +206,7 @@ export default function Home() {
 
             <ColumnWithArrow
               heading="Development"
-              content="We work in 1-2 week increments, always focussing on the next most valuable feature, and delivering each iteration iteration so that you can start using the software as part of your day-to-day ASAP."
+              content="We work in 1-2 week increments, always focussing on the next most valuable feature, and delivering each iteration so that you can start using the software as part of your day-to-day ASAP."
             />
 
             <ColumnWithArrow
@@ -160,7 +295,7 @@ export default function Home() {
       <div className={`bg-teal-400 ${sectionPaddingClasses}`}>
         <div className="container mx-auto text-white text-center space-y-8 md:space-y-12 px-4">
           <h2 className="text-2xl md:text-4xl font-bold text-gray-900">
-            Testimonials
+            Don't just take our word for it!
           </h2>
           <hr className="w-12 mx-auto border-2 border-gray-900" />
           <Slider
@@ -306,6 +441,23 @@ function ColumnWithArrow({ noArrow = false, heading, content }) {
           <ChevronDoubleDownIcon className="md:hidden h-8 w-8 my-8 flex-shrink-0" />
         </>
       )}
+    </div>
+  );
+}
+
+function WorkCard({ heading, subheading, logo, children }) {
+  return (
+    <div className="px-3 w-full md:w-1/3 mb-16 flex">
+      <div className="px-10 rounded-lg shadow-lg border-2 border-purple-600 py-5 w-full">
+        <div className="flex justify-between items-center mb-2">
+          <div>
+            <h3 className="font-semibold text-xl md:text-2xl">{heading}</h3>
+            <p className="italic">{subheading}</p>
+          </div>
+          {logo()}
+        </div>
+        {children}
+      </div>
     </div>
   );
 }

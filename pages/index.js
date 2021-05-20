@@ -206,9 +206,12 @@ export default function Home() {
               </h2>
               <hr className="w-12 mx-auto border-2 border-purple-800" />
             </div>
-            <p className="text-black-900 md:text-lg mb-8">
+            <a
+              href="mailto:contact@kiteframe.co.uk"
+              className="hover:underline inline-block text-black-900 md:text-lg mb-8"
+            >
               contact@kiteframe.co.uk
-            </p>
+            </a>
             <form
               className="w-3xl"
               name="contact"

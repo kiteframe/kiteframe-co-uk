@@ -131,19 +131,19 @@ export default function Home() {
           </WorkCard>
 
           <WorkCard
-            heading="Auditing System"
-            subheading="Keoda"
+            heading="Infrastructure Automation"
+            subheading="Nightline Association"
             logo={() => (
               <img
-                src="keoda-logo.jpeg"
-                className="h-5 lg:h-8"
-                alt="Keoda Logo"
+                src="nightline-logo.png"
+                className="h-10"
+                alt="Nightline Logo"
               />
             )}
           >
             <p>
-              Working with Keoda to project manage development of auditing
-              software for a travel sustainability company.
+              Building an automated deployment pipeline for an application
+              previously deployed using manual processes.
             </p>
           </WorkCard>
 
@@ -200,7 +200,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={`bg-gray-200 ${sectionPaddingClasses}`}>
+      <div className="bg-gray-200 pt-20 md:pt-28 pb-12 md:pb-16">
         <div className="container mx-auto px-10 text-gray-900">
           <div className="max-w-xl mx-auto text-center mb-20 md:mb-28">
             <h2 className="text-2xl md:text-4xl text-purple-800 font-bold mb-4">

@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>PHP Developers | KiteFrame</title>
+        <title>Software Engineers | KiteFrame</title>
         <meta
           name="description"
           content="KiteFrame accelerates the development of your PHP-based platform. We help CTOs build well-architected software that gives them the freedom to confidently adapt their technology strategy to changing business needs."

@@ -99,12 +99,16 @@ export default function Home() {
             heading="Promotions Platform"
             subheading="Insyt"
             logo={() => (
-              <img src="insyt-logo.png" className="h-5 lg:h-8" alt="Insyt Logo" />
+              <img
+                src="insyt-logo.png"
+                className="h-5 lg:h-8"
+                alt="Insyt Logo"
+              />
             )}
           >
             <p>
               Leading development of a custom promotions platform, with the
-              goals of better UX and load time, and even easier clients and
+              goals of better UX and load time, and even easier client and
               promotion onboarding.
             </p>
           </WorkCard>
@@ -130,11 +134,15 @@ export default function Home() {
             heading="Auditing System"
             subheading="Keoda"
             logo={() => (
-              <img src="keoda-logo.jpeg" className="h-5 lg:h-8" alt="Keoda Logo" />
+              <img
+                src="keoda-logo.jpeg"
+                className="h-5 lg:h-8"
+                alt="Keoda Logo"
+              />
             )}
           >
             <p>
-              Working to Keoda to project manage development of auditing
+              Working with Keoda to project manage development of auditing
               software for a travel sustainability company.
             </p>
           </WorkCard>
@@ -148,7 +156,7 @@ export default function Home() {
           >
             <p>
               Development of reusable UI components to interact with an internal
-              internal customer service API.
+              customer service API.
             </p>
           </WorkCard>
         </div>

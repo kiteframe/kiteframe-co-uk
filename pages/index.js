@@ -99,7 +99,7 @@ export default function Home() {
             heading="Promotions Platform"
             subheading="Insyt"
             logo={() => (
-              <img src="insyt-logo.png" className="h-8" alt="Insyt Logo" />
+              <img src="insyt-logo.png" className="h-5 lg:h-8" alt="Insyt Logo" />
             )}
           >
             <p>
@@ -130,7 +130,7 @@ export default function Home() {
             heading="Auditing System"
             subheading="Keoda"
             logo={() => (
-              <img src="keoda-logo.jpeg" className="h-8" alt="Keoda Logo" />
+              <img src="keoda-logo.jpeg" className="h-5 lg:h-8" alt="Keoda Logo" />
             )}
           >
             <p>
@@ -447,7 +447,7 @@ function ColumnWithArrow({ noArrow = false, heading, content }) {
 
 function WorkCard({ heading, subheading, logo, children }) {
   return (
-    <div className="px-3 w-full md:w-1/3 mb-16 flex">
+    <div className="px-3 lg:px-8 w-full md:w-1/3 mb-6 lg:mb-16 flex">
       <div className="px-10 rounded-lg shadow-lg border-2 border-purple-600 py-5 w-full">
         <div className="flex justify-between items-center mb-2">
           <div>

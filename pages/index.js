@@ -202,26 +202,208 @@ export default function Home() {
 
       <div className={`bg-gray-200 ${sectionPaddingClasses}`}>
         <div className="container mx-auto px-10 text-gray-900">
-          <h2 className="text-2xl md:text-4xl text-purple-800 font-bold mb-10 text-center">
-            Working with us
-          </h2>
+          <div className="max-w-xl mx-auto text-center mb-20 md:mb-28">
+            <h2 className="text-2xl md:text-4xl text-purple-800 font-bold mb-4">
+              What we do
+            </h2>
+            <p className="text-lg md:text-xl">
+              KiteFrame use a set of practices and principles to build complex
+              internal business systems and user-facing products in a fast yet
+              maintainable way - continuously delivering bug-free code with
+              confidence.
+            </p>
+          </div>
 
           <div className="flex flex-wrap md:-mx-10">
-            <ColumnWithArrow
-              heading="Discovery"
-              content="Together we'll gather a big picture idea of what your goals are and how best to tackle them."
-            />
+            <div className="md:w-1/3 md:px-10 text-center mb-10 md:mb-20">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 34 42.5"
+                  enableBackground="new 0 0 34 34"
+                  className="w-16 mx-auto"
+                >
+                  <g>
+                    <path d="M30,17.01v5h-3v-3.5h-8v3.5h-3v-3.5H7v3.5H4v-5c0-0.83,0.67-1.5,1.5-1.5H16v-3.52h3v3.52h9.5   C29.33,15.51,30,16.18,30,17.01z" />
+                    <path d="M10,25.01v5c0,0.82-0.67,1.5-1.5,1.5h-6c-0.83,0-1.5-0.68-1.5-1.5v-5c0-0.83,0.67-1.5,1.5-1.5h6   C9.33,23.51,10,24.18,10,25.01z" />
+                    <path d="M22,25.01v5c0,0.82-0.67,1.5-1.5,1.5h-6c-0.83,0-1.5-0.68-1.5-1.5v-5c0-0.83,0.67-1.5,1.5-1.5h6   C21.33,23.51,22,24.18,22,25.01z" />
+                    <path d="M33,25.01v5c0,0.82-0.67,1.5-1.5,1.5h-6c-0.83,0-1.5-0.68-1.5-1.5v-5c0-0.83,0.67-1.5,1.5-1.5h6   C32.33,23.51,33,24.18,33,25.01z" />
+                    <path d="M22,3.99v5c0,0.83-0.67,1.5-1.5,1.5h-6c-0.83,0-1.5-0.67-1.5-1.5v-5c0-0.83,0.67-1.5,1.5-1.5h6   C21.33,2.49,22,3.16,22,3.99z" />
+                  </g>
+                </svg>
+                <h3 className="text-xl md:text-2xl text-purple-800 font-medium pb-4 md:pb-8">
+                  Domain-Driven Design
+                </h3>
+                <p>
+                  We believe that to build effective software in complex
+                  domains, tight collaboration is required between developers
+                  and the business. Say goodbye to your business experts having
+                  one context and your developers having another.
+                </p>
+              </div>
+            </div>
 
-            <ColumnWithArrow
-              heading="Development"
-              content="We work in 1-2 week increments, always focussing on the next most valuable feature, and delivering each iteration so that you can start using the software as part of your day-to-day ASAP."
-            />
+            <div className="md:w-1/3 md:px-10 text-center mb-10 md:mb-20">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  viewBox="0 0 100 125"
+                  x="0px"
+                  y="0px"
+                  className="w-16 mx-auto"
+                >
+                  <path
+                    style={{
+                      direction: "ltr",
+                      enableBackground: "accumulate",
+                      baselineShift: "baseline",
+                      blockProgression: "tb",
+                      textIndent: 0,
+                      color: "#000000",
+                      textTransform: "none",
+                    }}
+                    fill="#000"
+                    d="M51,5.125c-11.9,0.1631-23.488,5.532-31.312,15.281-0.244-0.012-0.474-0.031-0.719-0.031-7.686,0-13.969,6.283-13.969,13.969,0,4.649,2.2963,8.7705,5.8125,11.312-0.096,13.406,6.2248,26.59,18.219,34.469,2.869,1.885,5.9162,3.2492,9.0312,4.2812,1.568,5.997,7.028,10.469,13.5,10.469,6.508,0,11.997-4.5155,13.531-10.562,8.078-2.819,15.362-8.0768,20.438-15.719l5.594,3.687,0.656-12.781,0.6875-12.75-11.375,5.8125-11.375,5.7812,6,3.9375c-3.286,4.89-7.8128,8.382-12.844,10.5-2.54-3.531-6.6515-5.8438-11.312-5.8438-4.666,0-8.836,2.3048-11.375,5.8438-1.613-0.64-3.2078-1.4132-4.7188-2.4062-8.003-5.257-12.528-13.677-13.094-22.5,6.053-1.529,10.562-7.0192,10.562-13.531,0-3.059-1.0055-5.8805-2.6875-8.1875,9.529-10.263,25.163-12.553,37.281-4.5938,0.113,0.074,0.2035,0.172,0.3125,0.25-0.503,1.438-0.78125,2.9898-0.78125,4.5938,0,7.686,6.2828,13.969,13.969,13.969,7.687,0,13.97-6.283,13.97-13.969s-6.283-13.968-13.969-13.968c-1.768,0-3.471,0.332-5.031,0.937-0.664-0.547-1.338-1.056-2.062-1.531-7.056-4.6348-15.058-6.827-22.938-6.719zm30.031,11.969c5.17,0,9.3125,4.1425,9.3125,9.3125s-4.1425,9.3125-9.3125,9.3125-9.3125-4.1425-9.3125-9.3125,4.1425-9.3125,9.3125-9.3125zm-4.1875,3.3125-1.6562,1.625,4.125,4.125-4.125,4.125,1.6562,1.625,4.125-4.125,4.0938,4.125,1.6562-1.625-4.125-4.125,4.125-4.125-1.6562-1.625-4.0938,4.125zm-57.875,4.625c5.17,0,9.3125,4.1425,9.3125,9.3125s-4.1425,9.3125-9.3125,9.3125-9.3125-4.1425-9.3125-9.3125,4.1425-9.3125,9.3125-9.3125zm5.3438,4.5-6.5,6.5-3.8438-3.8438-1.6562,1.6562,5.5,5.4688,1.3125-1.2812,0.34375-0.375,6.5-6.4688zm27.25,42.062c5.17,0,9.3125,4.1425,9.3125,9.3125s-4.1425,9.3125-9.3125,9.3125c-5.169,0-9.3125-4.1425-9.3125-9.3125s4.1435-9.3125,9.3125-9.3125zm-7.0938,5.0625,0,1,11,0,0-1zm2,2,0,1,9,0,0-1zm9.4852-0.34426c0.32242,1.3699,0.54332,2.2045,0.875,3.5312l0.15625-0.5625c0.39964,0.91191,0.78798,2.1234,0.79608,2.563,0.0062,0.33511-0.08504,0.51018-0.15625,0.59375s-0.14246,0.20551-0.34375,0.21019l0.03125,1c0.40898-0.0095,0.81876-0.2625,1.0938-0.58519,0.27499-0.3227,0.38416-0.75374,0.375-1.25-0.01308-0.70931-0.46414-2.0835-0.98358-3.188l0.78125,0.21875c-1.0702-1.0262-1.6218-1.521-2.625-2.5312zm-11.485,2.3443,0,1,10,0,0-1zm0,2,0,1,3,0,0-1zm4,0,0,1,8,0,0-1zm-2,2,0,1,10,0,0-1zm2,2,0,1,8,0,0-1z"
+                  />
+                </svg>
+                <h3 className="text-xl md:text-2xl text-purple-800 font-medium pb-4 md:pb-8">
+                  Test-Driven Development
+                </h3>
+                <p>
+                  In order to achieve to fast flow, it is absolutely essential
+                  that the development team have access to a suite of fast tests
+                  that are able to verify the behaviour of the system.
+                </p>
+              </div>
+            </div>
 
-            <ColumnWithArrow
-              heading="Maintenance"
-              content="We can support your software going forwards, fixing issues or adding new features. Our suite of automated tests, will allow us to confidently change the software without fear of breaking anything."
-              noArrow
-            />
+            <div className="md:w-1/3 md:px-10 text-center mb-10 md:mb-20">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 100 125"
+                  enableBackground="new 0 0 100 100"
+                  className="w-16 mx-auto"
+                >
+                  <path d="M82.4,36.1c0-4.4-0.9-8.7-2.6-12.7c-1.6-3.9-4-7.4-7-10.4c-0.5-0.5-1-0.9-1.4-1.4v5.2h-5.6c5.5,4.6,9.1,11.5,9.1,19.3  c0,4.9-1.4,9.5-3.9,13.4v6.4h4.8c1.6-2.2,3-4.5,4.1-7C81.6,44.8,82.4,40.5,82.4,36.1z" />
+                  <path d="M17.9,36.1c0,4.4,0.9,8.7,2.6,12.7c1.6,3.9,4,7.4,7,10.4c0.5,0.5,1,0.9,1.4,1.4c0,0,0-11.7,0-11.8c-2.2-3.7-3.4-8-3.4-12.6  c0-4.9,1.4-9.5,3.9-13.4v-6.4h-4.8c-1.6,2.2-3,4.5-4.1,7C18.8,27.4,17.9,31.7,17.9,36.1z" />
+                  <path d="M50.3,3.9c-4.4,0-8.7,0.9-12.7,2.6c-3.9,1.6-7.4,4-10.4,7c-0.5,0.5-0.9,1-1.4,1.4H31v5.6c4.6-5.5,11.5-9.1,19.3-9.1  c4.9,0,9.5,1.4,13.4,3.9H70v-4.8c-2.2-1.6-4.5-3-7-4.1C58.9,4.8,54.7,3.9,50.3,3.9z" />
+                  <path d="M32.6,39.2l17.4,10l17.5-10.1L50.2,29.1L32.6,39.2z M69.3,42L51.8,52v20.2l17.5-10.1V42z M31.1,42.1v20.1l17.5,10.1V52.2  L31.1,42.1z" />
+                  <polygon points="57.2,71.3 50.1,75.5 43.2,71.3 43.2,79 35.3,79 50.2,93.9 65,79 57.2,79 " />
+                </svg>
+                <h3 className="text-xl md:text-2xl text-purple-800 font-medium pb-4 md:pb-8">
+                  Continuous Delivery
+                </h3>
+                <p>
+                  Releasing relatively small increments more often reduces the
+                  risk of any one release, minimises the business impact of
+                  failed experiments and enables the acceleration of the
+                  development team.
+                </p>
+              </div>
+            </div>
+
+            <div className="md:w-1/3 md:px-10 text-center mb-10 md:mb-20">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 50 62.5"
+                  enableBackground="new 0 0 50 50"
+                  className="w-16 mx-auto"
+                >
+                  <g>
+                    <path d="M35.59395,11.6414V7.9142c0-0.8909-1.0772-1.3371-1.70709-0.7071l-6.58591,6.5858c-0.3905,0.3905-0.3905,1.0236,0,1.4142   l6.58591,6.5858c0.62989,0.63,1.70709,0.1838,1.70709-0.7071V17.368c4.1673,0.051,7.5423,3.4527,7.5423,7.6319   c0,4.211-3.4253,7.6368-7.6362,7.6368c-4.211,0-7.6363-3.4258-7.6363-7.6368c0-7.3691-5.9951-13.3632-13.3637-13.3632   c-7.3687,0-13.3638,5.9941-13.3638,13.3632c0,7.3165,5.9114,13.2705,13.2077,13.3554v3.7305c0,0.8909,1.0771,1.3371,1.707,0.7071   l6.58591-6.5858c0.39049-0.3906,0.39049-1.0237,0-1.4142l-6.58591-6.5858c-0.6299-0.63-1.707-0.1838-1.707,0.7071v3.7145   c-4.1385-0.0842-7.4802-3.4705-7.4802-7.6288c0-4.2109,3.4253-7.6367,7.6363-7.6367c4.2109,0,7.6362,3.4258,7.6362,7.6367   c0,7.3692,5.9951,13.3633,13.3638,13.3633c7.3686,0,13.3637-5.9941,13.3637-13.3633   C48.86375,17.6625,42.91905,11.6926,35.59395,11.6414z" />
+                    <path d="M35.59395,11.6414V7.9142c0-0.8909-1.0772-1.3371-1.70709-0.7071l-6.58591,6.5858c-0.3905,0.3905-0.3905,1.0236,0,1.4142   l6.58591,6.5858c0.62989,0.63,1.70709,0.1838,1.70709-0.7071V17.368c4.1673,0.051,7.5423,3.4527,7.5423,7.6319   c0,4.211-3.4253,7.6368-7.6362,7.6368c-4.211,0-7.6363-3.4258-7.6363-7.6368c0-7.3691-5.9951-13.3632-13.3637-13.3632   c-7.3687,0-13.3638,5.9941-13.3638,13.3632c0,7.3165,5.9114,13.2705,13.2077,13.3554v3.7305c0,0.8909,1.0771,1.3371,1.707,0.7071   l6.58591-6.5858c0.39049-0.3906,0.39049-1.0237,0-1.4142l-6.58591-6.5858c-0.6299-0.63-1.707-0.1838-1.707,0.7071v3.7145   c-4.1385-0.0842-7.4802-3.4705-7.4802-7.6288c0-4.2109,3.4253-7.6367,7.6363-7.6367c4.2109,0,7.6362,3.4258,7.6362,7.6367   c0,7.3692,5.9951,13.3633,13.3638,13.3633c7.3686,0,13.3637-5.9941,13.3637-13.3633   C48.86375,17.6625,42.91905,11.6926,35.59395,11.6414z" />
+                  </g>
+                </svg>
+                <h3 className="text-xl md:text-2xl text-purple-800 font-medium pb-4 md:pb-8">
+                  Devops
+                </h3>
+                <p>
+                  With the tight integration of development, testing, operations
+                  and support, teams become responsible for the end-to-end
+                  delivery of business features, drastically reducing hand-offs
+                  between teams and increasing overall quality.
+                </p>
+              </div>
+            </div>
+
+            <div className="md:w-1/3 md:px-10 text-center mb-10 md:mb-20">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  viewBox="0 0 846.66 1058.325"
+                  x="0px"
+                  y="0px"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  className="w-16 mx-auto"
+                >
+                  <g>
+                    <path d="M293.02 389.68c23.25,-23.25 58.61,12.11 35.36,35.36l-82.96 82.95 82.96 82.96c23.25,23.25 -12.11,58.61 -35.36,35.36l-100.64 -100.64c-9.76,-9.76 -9.76,-25.6 0,-35.36l100.64 -100.63zm-102.03 -260.33l240.33 0c13.75,0.1 24.9,11.25 24.9,25l0.11 68.34c0,13.8 -11.2,25 -25,25l-240.33 0c-13.75,-0.1 -24.9,-11.25 -24.9,-25l-0.11 -68.34c0,-13.8 11.2,-25 25,-25zm515.62 153.85l-142.03 0.03c-36.49,0 -66.45,-29.96 -66.45,-66.45l0 -136.67 -341.62 0c-8.99,0 -16.45,7.46 -16.45,16.45l0 653.53c0,9.1 7.35,16.45 16.45,16.45l533.65 0c8.99,0 16.45,-7.46 16.45,-16.45l0 -466.89zm-616.55 466.89l0 -653.53c0,-36.61 29.84,-66.45 66.45,-66.45l366.62 0c7.44,0 14.12,3.26 18.7,8.42l207.16 201.83c4.84,4.84 7.54,10.95 7.54,17.87l0.08 491.86c0,36.61 -29.84,66.45 -66.45,66.45l-533.65 0c-36.49,0 -66.45,-29.96 -66.45,-66.45zm351.67 -407.23c8.48,-31.72 56.72,-18.83 48.24,12.9l-85.04 317.38c-8.48,31.72 -56.72,18.83 -48.24,-12.9l85.04 -317.38zm76.56 82.18c-23.25,-23.25 12.11,-58.61 35.36,-35.36l100.64 100.63c9.76,9.76 9.76,25.6 0,35.36l-100.64 100.64c-23.25,23.25 -58.61,-12.11 -35.36,-35.36l82.96 -82.96 -82.96 -82.95z" />
+                  </g>
+                </svg>
+                <h3 className="text-xl md:text-2xl text-purple-800 font-medium pb-4 md:pb-8">
+                  Full Stack Developers
+                </h3>
+                <p>
+                  Advising from the sidelines can only take you so far. To
+                  provide the largest benefit possible to our clients, we work
+                  alongside their existing teams, helping them to address
+                  problems as they arise.
+                </p>
+              </div>
+            </div>
+
+            <div className="md:w-1/3 md:px-10 text-center mb-10 md:mb-20">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 66 82.5"
+                  enableBackground="new 0 0 66 66"
+                  className="w-16 mx-auto"
+                >
+                  <g>
+                    <g>
+                      <path d="M19,33.7c0-1.7,5.5-4.3,14-4.3s14,2.5,14,4.3c0,1.7-5.5,4.2-14,4.2S19,35.4,19,33.7z" />
+                      <path d="M17,33.4L17,33.4c0,0.1,0,0.2,0,0.2V33.4z" />
+                      <path d="M49,33.4v0.2C49,33.6,49,33.5,49,33.4L49,33.4z" />
+                      <path d="M33,40.1c5.5,0,11.1-1,14-3v5.6c0,1.7-5.5,4.2-14,4.2s-14-2.5-14-4.2v-5.6C21.9,39.1,27.5,40.1,33,40.1z" />
+                      <path d="M33,49.1c5.5,0,11.1-1,14-3v5.6c0,1.7-5.5,4.2-14,4.2s-14-2.5-14-4.2v-5.6C21.9,48.1,27.5,49.1,33,49.1z" />
+                      <path d="M33,58.2c5.5,0,11.1-1,14-3v5.6c0,1.7-5.5,4.2-14,4.2s-14-2.5-14-4.2v-5.6C21.9,57.1,27.5,58.2,33,58.2z" />
+                      <path d="M47,33.7c0,1.7-5.5,4.2-14,4.2s-14-2.5-14-4.2c0-1.7,5.5-4.3,14-4.3S47,31.9,47,33.7z" />
+                    </g>
+                    <g>
+                      <path d="M63.7,29.8c0,6.4-5.2,11.7-11.7,11.7h-3c0-5.4,0-7.9,0-8c-0.3-3.9-8.3-6-15.9-6s-15.7,2.1-15.9,6    c0,0.1,0,2.6,0,8h-4.1c-5.8,0-10.6-4.8-10.6-10.6c0-5.6,4.5-10.5,10.4-10.6c-1.6-8,6.4-14.8,14-12.1C34.4-6,56.5,2.6,52.6,18.1    c2.8,0.2,5.4,1.3,7.5,3.2C62.4,23.5,63.7,26.6,63.7,29.8z" />
+                    </g>
+                  </g>
+                </svg>
+                <h3 className="text-xl md:text-2xl text-purple-800 font-medium pb-4 md:pb-8">
+                  Cloud
+                </h3>
+                <p>
+                  With the ever-increasing flexibility offered by public cloud
+                  service providers, businesses no longer have to commit to
+                  up-front capital investments. We help our clients leverage the
+                  power of the cloud, helping them focus on providing business
+                  value, not infrastructure.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

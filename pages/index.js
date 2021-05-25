@@ -451,7 +451,7 @@ export default function Home() {
             </div>
             <span className="text-gray-900 text-xl">Joe Reed</span>
             <a
-              href="https://www.linkedin.com/in/joe-reed-44a57592/"
+              href="https://www.linkedin.com/in/kiteframe-joe-reed/"
               className="w-10"
             >
               <img src="LI-In-Bug.png" alt="LinkedIn Icon" />

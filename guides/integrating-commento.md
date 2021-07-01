@@ -3,7 +3,6 @@ title: "Integrating Commento.io into the new KiteFrame site"
 description: Commento.io is a platform for integrating visitor comments with your site, without invading the privacy of those commenting. 
 author: Tim Mortimer
 date: "2021-01-13"
-commentoId: 7a0f2648-8b0f-4d44-9c2b-53b6af0c6a77
 ---
 
 As regular attendees on the London technology Meetup scene, we have always enjoyed the various conversations we have had with fellow Meetup goers over the years. They form a good part of how we grow as developers, providing us with insights and opinions from a broader range of experiences.

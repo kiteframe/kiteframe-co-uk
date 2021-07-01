@@ -2,25 +2,14 @@ import { getAllGuides, getGuideBySlug } from "../../lib/guides";
 import markdownToHtml from "../../lib/markdown";
 import Layout from "../../components/layout";
 import Head from "next/head";
-import { useEffect } from "react";
 import moment from "moment";
 
 export default function Guide({ slug, meta, content }) {
-  useEffect(() => {
-    window.parent = {
-      location: {
-        host: "www.kiteframe.co.uk",
-        pathname: meta.commentoId,
-      },
-    };
-  });
-
   return (
     <Layout>
       <Head>
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
-        <script defer src="https://cdn.commento.io/js/commento.js" />
       </Head>
       <article className="container mx-auto px-4 py-12">
         <header className="pt-6 xl:pb-6">
@@ -51,7 +40,6 @@ export default function Guide({ slug, meta, content }) {
           className="prose mx-auto pb-20"
           dangerouslySetInnerHTML={{ __html: content }}
         />
-        <div className="max-w-3xl mx-auto" id="commento" />
       </article>
     </Layout>
   );

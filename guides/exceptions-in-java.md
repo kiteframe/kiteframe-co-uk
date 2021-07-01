@@ -3,7 +3,6 @@ title: "Exceptions in Java"
 description: "Exceptions allow us to handle errors elegantly, enabling the normal flow of our code to stay focussed on the task at hand, and letting us explicitly deal with the exceptional cases independently."
 author: Tim Mortimer
 date: "2021-02-10"
-commentoId: de22c020-3c22-41cd-8292-73131e8fd880
 ---
 
 During the development of an application or library, it is often the case that we need to call another piece of code that *might* not behave as expected.

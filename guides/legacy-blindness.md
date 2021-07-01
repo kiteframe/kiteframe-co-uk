@@ -3,7 +3,6 @@ title: "What is legacy blindness, and how can I avoid it?"
 description: Legacy software has a strong influence over the way that we think about a domain; we can use tactics to learn from its models and improve upon them, while avoiding falling into the trap of reimplementing the same solutions.
 author: Joe Reed
 date: "2021-01-27"
-commentoId: 165f56fa-2842-4060-b250-5f5e7c5188a8
 ---
 
 Legacy blindness is a term coined by Eric Evans - the first time I heard it was when watching [his talk at DDD Europe 2018](https://youtu.be/T29WzvaPNc8?t=432). In the talk, Eric defines legacy blindness as the state of the models and language of legacy software being so ingrained in the way that we think about a domain that we are unable to see other options. He also notes that this is a particularly strong force when the legacy is a good one.

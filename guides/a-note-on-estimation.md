@@ -11,9 +11,9 @@ Every Sprint, the team dedicates time to refining the backlog. Beyond debating a
 
 Then they size it. Some teams use Fibonacci numbers to do this. Others like to use T-shirt sizing. Your milage may vary. Nonetheless, time is spent debating its size and coming to a conclusion.
 
-At the beginning of the next iteration, the Sprint Planning meeting comes about. More time is spent deciding whether the Sprint is full enough. Some teams will review past Sprints to assess how much they've done previously. Someone points out that the last Sprint was different to the upcoming one because of some unplanned worked popped up out of nowhere.
+At the beginning of the next iteration, the Sprint Planning meeting comes about. More time is spent deciding whether the Sprint is full enough. Some teams will review past Sprints to assess how much they've done previously. Someone points out that the last Sprint was different to the upcoming one because of some unplanned work popped up out of nowhere.
 
-The comes the daily stand up. With it only being day 2 of the Sprint, most of the stories lie in the 'Not Started' column. They mentally weed out the stories they've not started so that they can talk about the progress on the couple they have.
+Then comes the daily stand up. With it only being day 2 of the Sprint, most of the stories lie in the 'Not Started' column. They mentally weed out the stories they've not started so that they can talk about the progress on the couple they have.
 
 Next, one of three things happen:
 1. The team completes all the work in the Sprint, and decide to pull in more work, not after giving themselves a little metaphorical pat on the back for beating their prediction of course.

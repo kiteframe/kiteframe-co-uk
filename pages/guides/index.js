@@ -21,7 +21,8 @@ export default function Guides({ guides }) {
             Guides
           </h1>
           <p className="text-lg leading-7 text-gray-500">
-            All of KiteFrame's hot takes on topics around domain-driven design
+            All of KiteFrame&apos;s hot takes on topics around domain-driven
+            design
           </p>
         </div>
 
@@ -42,8 +43,11 @@ export default function Guides({ guides }) {
               <div className="space-y-5 xl:col-span-3">
                 <div className="space-y-6">
                   <h2 className="text-2xl leading-8 font-bold tracking-tight">
-                    <Link href={`/guides/${guide.slug}`}>
-                      <a className="text-gray-900">{guide.meta.title}</a>
+                    <Link
+                      href={`/guides/${guide.slug}`}
+                      className="text-gray-900"
+                    >
+                      {guide.meta.title}
                     </Link>
                   </h2>
                   <p className="text-gray-500">{guide.meta.description}</p>

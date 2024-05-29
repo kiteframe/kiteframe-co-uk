@@ -90,8 +90,8 @@ export default function Home() {
             )}
           >
             <p>
-              Working with HyperionX's team to build a broker administration
-              platform from the ground up.
+              Working with HyperionX&apos;s team to build a broker
+              administration platform from the ground up.
             </p>
           </WorkCard>
 
@@ -464,7 +464,7 @@ export default function Home() {
       <div className={`bg-teal-400 ${sectionPaddingClasses}`}>
         <div className="container mx-auto text-white text-center space-y-8 md:space-y-12 px-4">
           <h2 className="text-2xl md:text-4xl font-bold text-gray-900">
-            Don't just take our word for it!
+            Don&apos;t just take our word for it!
           </h2>
           <hr className="w-12 mx-auto border-2 border-gray-900" />
           <Slider

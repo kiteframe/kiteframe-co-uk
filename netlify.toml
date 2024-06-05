@@ -3,9 +3,6 @@
   to = "/guides/aggregate-design-transactional-consistency"
 
 [[plugins]]
-package = "netlify-plugin-cache-nextjs"
-
-[[plugins]]
 package = "@netlify/plugin-sitemap"
 
   [plugins.inputs]

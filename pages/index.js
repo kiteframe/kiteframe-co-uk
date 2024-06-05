@@ -603,11 +603,11 @@ function ColumnWithArrow({ noArrow = false, heading, content }) {
         <p>{content}</p>
       </div>
       {noArrow ? (
-        <div className="hidden md:block w-8 flex-shrink-0" />
+        <div className="hidden md:block w-8 shrink-0" />
       ) : (
         <>
-          <ChevronDoubleRightIcon className="hidden md:block h-8 w-8 flex-shrink-0" />
-          <ChevronDoubleDownIcon className="md:hidden h-8 w-8 my-8 flex-shrink-0" />
+          <ChevronDoubleRightIcon className="hidden md:block h-8 w-8 shrink-0" />
+          <ChevronDoubleDownIcon className="md:hidden h-8 w-8 my-8 shrink-0" />
         </>
       )}
     </div>

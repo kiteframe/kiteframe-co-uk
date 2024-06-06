@@ -593,27 +593,6 @@ export default function Home() {
   );
 }
 
-function ColumnWithArrow({ noArrow = false, heading, content }) {
-  return (
-    <div className="flex flex-col md:flex-row items-center md:w-1/3 md:pl-10 text-center">
-      <div className="flex flex-col md:mr-8">
-        <h3 className="text-xl md:text-2xl text-purple-800 font-medium mb-2 md:mb-5">
-          {heading}
-        </h3>
-        <p>{content}</p>
-      </div>
-      {noArrow ? (
-        <div className="hidden md:block w-8 shrink-0" />
-      ) : (
-        <>
-          <ChevronDoubleRightIcon className="hidden md:block h-8 w-8 shrink-0" />
-          <ChevronDoubleDownIcon className="md:hidden h-8 w-8 my-8 shrink-0" />
-        </>
-      )}
-    </div>
-  );
-}
-
 function WorkCard({ heading, subheading, logo, children }) {
   return (
     <div className="px-3 lg:px-8 w-full md:w-1/3 mb-6 lg:mb-16 flex">

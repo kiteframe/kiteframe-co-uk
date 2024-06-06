@@ -15,9 +15,9 @@ export default function Guides({ guides }) {
         />
       </Head>
 
-      <div className="max-w-3xl mx-auto px-4 py-12 divide-y divide-y-200">
-        <div className="pt-6 pb-8 space-y-2 md:space-y-5">
-          <h1 className="text-3xl leading-9 font-bold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+      <div className="divide-y-200 mx-auto max-w-3xl divide-y px-4 py-12">
+        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
+          <h1 className="md:leading-14 text-3xl font-bold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl">
             Guides
           </h1>
           <p className="text-lg leading-7 text-gray-500">
@@ -29,12 +29,12 @@ export default function Guides({ guides }) {
         <div className="divide-y divide-gray-200">
           {guides.map((guide) => (
             <article
-              className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline py-12"
+              className="space-y-2 py-12 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0"
               key={guide.slug}
             >
               <dl>
                 <dt className="sr-only">Published on</dt>
-                <dd className="text-base leading-6 font-medium text-gray-500">
+                <dd className="text-base font-medium leading-6 text-gray-500">
                   <time dateTime={guide.meta.date}>
                     {moment(guide.meta.date).format("Do MMMM, YYYY")}
                   </time>
@@ -42,7 +42,7 @@ export default function Guides({ guides }) {
               </dl>
               <div className="space-y-5 xl:col-span-3">
                 <div className="space-y-6">
-                  <h2 className="text-2xl leading-8 font-bold tracking-tight">
+                  <h2 className="text-2xl font-bold leading-8 tracking-tight">
                     <Link
                       href={`/guides/${guide.slug}`}
                       className="text-gray-900"

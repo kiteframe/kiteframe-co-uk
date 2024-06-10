@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.3",
-    "@netlify/plugin-sitemap": "^0.7.0",
+    "@netlify/plugin-sitemap": "^0.8.1",
     "@tailwindcss/typography": "^0.5.13",
     "autoprefixer": "^10.4.19",
     "eslint": "^8.57.0",

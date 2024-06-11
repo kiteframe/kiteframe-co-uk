@@ -1,6 +1,6 @@
 ---
 title: "Integrating Commento.io into the new KiteFrame site"
-description: Commento.io is a platform for integrating visitor comments with your site, without invading the privacy of those commenting. 
+description: Commento.io is a platform for integrating visitor comments with your site, without invading the privacy of those commenting.
 author: Tim Mortimer
 date: "2021-01-13"
 ---
@@ -63,13 +63,13 @@ change a page's URL, you must update the div element containing the comments to 
 follows:
 
 ```javascript
-<div id="commento" data-page-id="/original/path/to/page" />
+<div id="commento" data-page-id="/original/path/to/page"/>
 ```
 
 Maintaining and keeping track of those URLs was going to be pain, and so I opted for a more robust solution.
 
 The more eagle-eyed amongst you may have noticed that I set the pathname on the `window.parent.location` object
-to `meta.commentoId`. With all our guides written in Markdown, we opted to include an UUID4 identifier in the Front
+to `meta.commentoId`. With all our posts written in Markdown, we opted to include an UUID4 identifier in the Front
 Matter of each guide, which is explicitly set as the page id. This conveniently decouples the Commento comments from the
 page's URL, making future URL changes much simpler.
 

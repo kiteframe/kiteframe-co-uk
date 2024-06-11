@@ -1,10 +1,10 @@
-import { getAllGuides, getGuideBySlug } from "../../lib/guides";
+import { getAllPosts, getPostBySlug } from "../../lib/posts";
 import markdownToHtml from "../../lib/markdown";
 import Layout from "../../components/layout";
 import Head from "next/head";
 import moment from "moment";
 
-export default function Guide({ slug, meta, content }) {
+export default function Post({ meta, content }) {
   return (
     <Layout>
       <Head>
@@ -46,25 +46,25 @@ export default function Guide({ slug, meta, content }) {
 }
 
 export async function getStaticProps({ params }) {
-  const guide = getGuideBySlug(params.slug);
-  const content = await markdownToHtml(guide.content || "");
+  const post = getPostBySlug(params.slug);
+  const content = await markdownToHtml(post.content || "");
 
   return {
     props: {
-      ...guide,
+      ...post,
       content,
     },
   };
 }
 
 export async function getStaticPaths() {
-  const guides = getAllGuides();
+  const posts = getAllPosts();
 
   return {
-    paths: guides.map((guide) => {
+    paths: posts.map((post) => {
       return {
         params: {
-          slug: guide.slug,
+          slug: post.slug,
         },
       };
     }),

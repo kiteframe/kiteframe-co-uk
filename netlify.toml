@@ -1,6 +1,10 @@
 [[redirects]]
 from = "/post/aggregate-design-transactional-consistency"
-to = "/guides/aggregate-design-transactional-consistency"
+to = "/blog/aggregate-design-transactional-consistency"
+
+[[redirects]]
+from = "/guides/*"
+to = "/blog/:splat"
 
 [[plugins]]
 package = "@netlify/plugin-sitemap"

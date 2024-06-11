@@ -15,7 +15,7 @@ export default function Layout({ children }) {
         <nav className="flex items-center space-x-10">
           <Link href="/">Home</Link>
           <Link href="/#contact-us">Contact Us</Link>
-          <Link href="/guides">Guides</Link>
+          <Link href="/blog">Blog</Link>
         </nav>
       </div>
       <div>{children}</div>

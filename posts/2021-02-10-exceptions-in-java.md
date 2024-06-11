@@ -114,7 +114,7 @@ Good question. Did you notice the `throw new DatabaseNotAvaiableException()` in 
 constructing a new object. In fact, we were. Exceptions, are just a special type of Object. More precisely, they are
 objects which extend the `Exception` class, which itself extends the `Throwable` class.
 
-![Exception Class Hierarchy](/guides/exceptions-in-java/exception-hierarchy.png)
+![Exception Class Hierarchy](/posts/exceptions-in-java/exception-hierarchy.png)
 
 You won't usually throw an instance of the `Exception` class itself since it is too generic. Instead, you want to
 provide the context behind what has gone wrong by subclassing either `Exception` itself, a built in subclass
@@ -124,7 +124,7 @@ of `Exception` such as a `LogicException`, or a subclass of one of your own exce
 
 Yes! There's another type that extends Throwable - Error. The class hierarchy actually looks like this:
 
-![Throwable Class Hierarchy](/guides/exceptions-in-java/throwable-hierarchy.png)
+![Throwable Class Hierarchy](/posts/exceptions-in-java/throwable-hierarchy.png)
 
 It's quite likely that you'll never throw or catch Errors yourself though. They tend to be used for problems that affect
 the JVM itself, and so aren't involved in day-to-day application development.
@@ -140,7 +140,7 @@ For times when an API is used incorrectly in this way, a special type of excepti
 thrown. A runtime exception is simply an instance of the `RuntimeException` class (or a subclass of it), which itself
 extends `Exception`.
 
-![Runtime Exception Class Hierarchy](/guides/exceptions-in-java/runtime-exception-hierarchy.png)
+![Runtime Exception Class Hierarchy](/posts/exceptions-in-java/runtime-exception-hierarchy.png)
 
 Along with instances of type `Error`, instances of type `RuntimeException` are known as unchecked exceptions. This is
 because The Catch or Specify requirement does not apply to them. After all, if you've made a programmer error, you are

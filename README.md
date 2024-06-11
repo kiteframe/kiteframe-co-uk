@@ -17,12 +17,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-## Generating UUIDs for Guides
+## Generating UUIDs for Posts
 
 By default, Commento uses the browser URL as the identifier for a page's comments. This creates work when the page's URL
 changes for some reason (perhaps due to an SEO optimisation), since you then have to provide the #commento div
 a `data-page-id`
-attribute. To mitigate this, we provide each guide with a `commentoId` attribute, giving it a consistent ID reference
+attribute. To mitigate this, we provide each post with a `commentoId` attribute, giving it a consistent ID reference
 regardless of URL changes. To generate an appropriate UUID version 4 string,
 visit [https://www.uuidgenerator.net/](https://www.uuidgenerator.net/).
 

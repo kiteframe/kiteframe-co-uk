@@ -1,53 +1,116 @@
 import Layout from "../components/layout";
 import Slider from "react-slick";
 import Head from "next/head";
+import Link from "next/link";
 
 const sectionPaddingClasses = "pt-20 md:pt-28 pb-24 md:pb-36";
 
 export default function Home() {
-  const description =
-    "KiteFrame is a London-based software agency without the baggage. We work closely with you to cut to the core of your problem, and write the code to start solving it from week one.";
-
   return (
     <Layout>
       <Head>
-        <title>Software Developers | KiteFrame</title>
-        <meta name="description" content={description} />
+        <title>The software delivery accelerators | KiteFrame</title>
+        <meta
+          name="description"
+          content="Through my hands-on consulting, training and advisory practice, 
+          I help organisations like yours improve their software delivery performance."
+        />
       </Head>
 
-      <div className="container mx-auto flex max-w-5xl flex-wrap items-center px-4 pb-10 pt-8 md:pb-16 md:pt-14">
-        <div className="mb-10 flex w-full flex-col justify-items-center text-center md:mb-0 md:w-1/2 md:text-left">
-          <h1 className="mb-4 mb-6 text-3xl font-extrabold leading-tight text-gray-900 md:text-4xl">
-            Software development for businesses who want to move fast
-          </h1>
-          <p className="text-lg font-normal text-gray-900 md:text-xl">
-            {description}
+      <div
+        className={`container mx-auto space-y-16 px-4 text-center md:space-y-20 ${sectionPaddingClasses}`}
+      >
+        <h1 className="mb-12 text-5xl font-bold leading-tight text-purple-800 md:mb-20 md:text-6xl">
+          Accelerate your path to production.
+        </h1>
+
+        <div className="mx-auto max-w-xl space-y-10 text-center text-lg md:text-xl">
+          <p>
+            How long does it take your organisation to ship a simple change? Is
+            it a day? A week? Maybe even months?
+          </p>
+
+          <p>
+            You know that working in smaller batch sizes makes changes to your
+            applications easier to reason about and deployment failures easier
+            to recover from, but how do you move to smaller batch sizes when
+            acceptance testing and other verification steps take seemingly
+            forever?
+          </p>
+
+          <p className="font-medium italic">It often feels impossible.</p>
+
+          <p>
+            Sometimes you even know where the bottlenecks are - you just
+            don&apos;t have the time or resources to address them.
+          </p>
+
+          <p>This is where I can help.</p>
+
+          <p>
+            Through my hands-on consulting, training and advisory practice, I
+            help organisations like yours improve their software delivery
+            performance.
+          </p>
+
+          <p>
+            Say goodbye to long lead times, bug-ridden software and frustrated
+            users.{" "}
+            <Link
+              href="/#contact-us"
+              className="inline text-purple-800 underline underline-offset-4"
+            >
+              Get in touch
+            </Link>{" "}
+            today to unleash the full potential of your teams.
           </p>
         </div>
 
-        <div className="flex w-full md:w-1/2 md:justify-end">
-          <div className="mx-auto w-2/5 max-w-sm md:w-3/5">
+        <div className="mx-auto flex w-full flex-col items-center space-y-4 text-center md:mb-20 md:w-1/3 md:px-10">
+          <div className="relative">
             <img
-              src="humaaans-graphs.png"
-              alt="Graphic of a person surrounded by chart imagery"
+              src="tim.jpeg"
+              alt="Tim Mortimer"
+              className="mb-4 h-40 w-40 rounded-full"
             />
+            <div className="absolute top-0 h-40 w-40 rounded-full bg-gray-800 opacity-5" />
           </div>
+          <span className="text-xl text-gray-900">Tim Mortimer</span>
+          <span className="text-md italic text-gray-900">
+            Founder of KiteFrame
+          </span>
         </div>
       </div>
 
       <div className={`bg-teal-400 px-4 ${sectionPaddingClasses}`}>
         <div className="container mx-auto space-y-6 text-center md:space-y-8">
           <h2 className="text-2xl font-bold md:text-4xl">
-            Delightful software, built to last
+            Bespoke delivery diagnostics
           </h2>
+
           <hr className="mx-auto w-12 border-2 border-gray-900" />
-          <div className="mx-auto flex max-w-xl text-center">
-            <span className="text-lg md:text-xl">
-              We build software engineering excellence into every line of code
-              we write. This results in software that is a joy to use, and easy
-              to maintain, allowing us to keep up pace of delivery while
-              adapting or pivoting when requirements change.
-            </span>
+
+          <div className="mx-auto max-w-xl space-y-10 text-center text-lg md:text-xl">
+            <p>
+              Every team and application is different, and while the DORA
+              metrics are useful as a self-evaluation tool, they can never tell
+              you where your teams&apos; specific bottlenecks are.
+            </p>
+
+            <p>
+              Working closely with your teams, I will help you identify and
+              remedy the areas where your teams can safely and sustainably
+              increase the rate at which they get software into the hands of
+              users.
+            </p>
+
+            <p>
+              Our hands-on approach is very important to us - coaching teams on
+              imaginary codebases solving fake problems leads to teams feeling
+              lost the moment they&apos;re back at their desks. Let&apos;s skip
+              that step and dive straight into the problem at hand. Working on
+              real code bases, solving real problems.
+            </p>
           </div>
         </div>
       </div>
